@@ -45,7 +45,7 @@ p, a, ul, ol, li,span{
 p.tiny_font{
     font-size: 14px;
 }
-/* @media screen and (max-width: 992px) {
+/* @media screen and (max-width: 768px) {
     h1{
         font-size: 40px;
     }
@@ -92,10 +92,11 @@ body{
     width: 100%;
 }
 /* 手機 分欄通用 */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .container{
         width: 100%;
         padding: 0px 10px;
+        padding-top: 70px;
     }
 }
 /* input 設定 start */
@@ -146,6 +147,10 @@ input[type="button"]{
     align-items: center;
 }
 
+/* section title */
+.col_12.col_lg_12.title{
+    padding-bottom: 70px;
+}
 /* 其他通用 end*/
 
 /* header section start */
@@ -207,7 +212,7 @@ input[type="button"]{
 /* header section 共用 end */
 
 /* header 手機 start */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .container.header{
         padding: 0 5px;
     }
@@ -379,8 +384,15 @@ input[type="button"]{
 }
 /* header 手機 end */
 
+/* header transation start */
+/* @media screen and (min-width: 992px) and (max-width:  768px) {
+    .search_type{
+        display: none;
+    } */
+/* header transation end */
+
 /* header 桌機 start */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 768px){
     /* menu 滑動下底線上層定位 */
     .menu li, .sales, .columns{
         position: relative;
@@ -557,20 +569,29 @@ input[type="button"]{
     margin: 0, 0, 0 auto;
     z-index: 0;
 }
-.rolling_pics .item.left a{
-    animation: 10s linear infinite;
+.rolling_pics .item.left{
+    animation: slider 10s linear infinite;
 }
-@keyframes slideshow {
-    0%    { left: 0; }
-    100%  { left: -200%; }
-  }
+.rolling_pics .item.left a{
+    animation: slider 10s linear infinite;
+}
+.rolling_pics .item.left a img{
+    animation: slider 10s linear infinite;
+}
+@keyframes slider{
+    0%{left: 0px}
+   20%{left: -300px}
+   50%{left: -600px}
+   70%{left: -900px}
+   90%{left: -1200px}
+}
 .rolling_pics img{
     width:  160px;
     padding: 15px;
 }
 
 /* web_title 手機 start */
-@media screen  and (max-width: 992px) {
+@media screen  and (max-width: 768px) {
     .web_title.container{
         padding-bottom: 120px;
     }
@@ -591,7 +612,7 @@ input[type="button"]{
 /* web_title 手機 end */
 
 /* web_title 桌機 start */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 }
 /* web_title 桌機 end */
 /* web_title section end */
@@ -657,10 +678,10 @@ input[type="button"]{
     justify-content: center;
     padding-top: 20px;
 }
-.most_read .item{
+/* .most_read .item{
     margin: 20px;
     overflow: hidden;
-}
+} */
 .product_pic{
     position: relative;
 }
