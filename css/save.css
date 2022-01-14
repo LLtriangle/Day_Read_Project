@@ -7,7 +7,6 @@
     --subcolorgreen: #A5BA93;
     --subcolor: #F4F1EC;
     --subcolordark: #BE9C6D;
-    --tagcolor: #F0A07C;
     --npurewhite: #FBF8F6;
     --fontcolor: #2e323b;
 }
@@ -84,7 +83,7 @@ body{
     padding: 0 40px;
     padding-top: 70px;
 }
-.col_12, .col_md_12{
+.col_12, .col_lg_12{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,19 +92,14 @@ body{
     width: 100%;
 }
 /* 手機 分欄通用 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container{
         width: 100%;
-        padding: 0px;
-        padding-top: 40px;
+        padding: 0px 10px;
+        padding-top: 70px;
     }
 }
-
 /* input 設定 start */
-
-label{
-    cursor: pointer;
-}
 
 /* 移除 input type search 瀏覽器的取消鍵 start */
 /* clears the 'X' from Internet Explorer */
@@ -127,32 +121,25 @@ input[type=search]::-ms-clear {
    input[type="search"]::-webkit-search-results-decoration { 
    display: none; 
    }
+/* 移除 input type search  瀏覽器的取消鍵 end */
 
 /* input type search placeholder 設定 start */
 ::placeholder {
     font-family: 'Yu Gothic';
     font-size: 14px;
   }
+/* input type search placeholder 設定 end */
 
-/* input type search 邊框 設定 start */
-.search_type{
-    outline: none;
-    border:none;
-    font-size: 20px;
-}
-
-/* input type 設定 start */
+/* input type button 設定 start */
 input[type="button"]{
     display: none;
 }
-input[type="checkbox"]{
-    display: none;
-}
+/* input type button 設定 end */
 
 /* input 設定 end */
 
 /* slide button img 設定 */
-.img.slide_btn img{
+.item.img.slide_btn img{
     width: 40px
 }
 .slide_btn.prev, .slide_btn.next{
@@ -161,32 +148,22 @@ input[type="checkbox"]{
 }
 
 /* section title */
-.col_12.col_md_12.title{
-    
+.col_12.col_lg_12.title{
     padding-bottom: 70px;
-}
-.title{
-    font-family: 'Hina Mincho';
-}
-.col_12.col_md_12.title_sub{
-    padding-bottom: 40px;
 }
 /* 其他通用 end*/
 
 /* header section start */
-/* header section 共用 */
+/* header section 共用 start */
 .container.header{
-    padding: 0 5px;
+    padding-top: 0;
     position: fixed;
     z-index: 5;
 }
-.col_12.col_md_12.header{
+.col_12.col_lg_12.header{
     padding: 0;
     padding-top: 20px;
     font-weight: 500;
-}
-.container.title{
-    padding-top: 130px;
 }
 .nav, .menu,.search_bar, .nav_btns{
     display: flex;
@@ -215,114 +192,47 @@ input[type="checkbox"]{
 .menu a{
     font-size: 18px;
     color: var(--subcolordark);
-    padding: 5px 0px;
 }
-.sales a{
+.menu .sales a{
     color: var(--maincolor);
 }
 .img_search{
     width: 12px;
 }
+.search_show, .search_cancel{
+    cursor: pointer;
+}
+.search_type{
+    outline: none;
+    border:none;
+}
 .img_btn{
     width: 24px;
-}
-
-/* 搜尋 */
-.header .search{
-    display: block;
-}
-.header .search_bar::before{
-    content:'Search : ';
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-.header .search_bar{
-    transform: translate(200%, -150%);
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    width: 90vw;
-    height: 50vh;
-    background-color: #fff;
-    box-shadow: 50px 50px 10px 1px #0006;
-    /* box-shadow: -20px 20px 10px 1px #0006; */
-    top: 180%;
-    right: 5%;
-    background: linear-gradient(to left bottom, transparent 50%, #ccc 0) no-repeat 100% 0 / 2em 2em,
-    linear-gradient(-135deg, transparent 1.41em, #fff 0);
-    transition: .5s;
-}
-.header .search{
-    display: flex;
-    align-items: center;
-}
-.header .img_search{
-    width: 12px;
-}
-.img_btn{
-    width: 25px;
-}
-.header .img_search.magnifer{
-    padding-top: 5px;
-    width: 20px;
-}
-.header .img_search.cancel{
-    width: 15px;
-}
-.header .search_show{
-    display: block;
-    padding: 5px 10px;
-}
-.header .search_type{
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    padding: 0 20px;
-    padding-right: 30px;
-    background-color: var(--subbgcolor);
-}
-.header .search_bar_cancel{
-    position: relative;
-    background-color: var(--subbgcolor);
-    border-radius: 25px;
-    margin:  0 10px;
-}
-.header .search_cancel{
-    position: absolute;
-    width: 12px;
-    left: 90%;
-    bottom: 24%;
-}
-/* search bar 出現 */
-.header .search_bar.on{
-    transform: translate(0%, 0);
-}
-.header .search_bar::before{
-    content:'Search : ';
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 20px;
 }
 /* header section 共用 end */
 
 /* header 手機 start */
-@media screen and (max-width: 767px) {
-
-    /* menu */
-    /* 隱藏menu */
+@media screen and (max-width: 768px) {
+    .container.header{
+        padding: 0 5px;
+    }
+    .nav{
+        position: relative;
+        justify-content: flex-end;
+    }
+    .img_logo{
+        height: 40px;
+    }
     .menu{
         position: fixed;
         top: 2%;
-        right: 2%;
+        right: 3%;
         flex-direction: column;
         align-items: center;
         background-color: #fff;
         height: 80vh;
         width: 95vw;
-        transform: translate(130%, 30%) rotate(45deg);
+        transform: translate(130%, 0) rotate(45deg);
         z-index: 5;
         justify-content: space-between;
         transition: .5s;
@@ -332,7 +242,51 @@ input[type="checkbox"]{
     }.menu a{
         color: var(--fontcolor);
     }
-    
+    /* 漢堡選單 */
+    .item.menu_btn{
+        width: 50px;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .item.menu_btn.on{
+        z-index: 5;
+    }
+    .burger{
+        margin: 2px 10px;
+        background-color: var(--subcolordark);
+        display: block;
+        height: 2px;
+        width: 20px;
+        text-align: right;
+    }
+    .item.menu_btn :nth-child(even){
+        height: 1px;
+        width: 16px;
+    }
+    .item.menu_btn :nth-child(5){
+        width: 12px;
+    }
+    /* 手機 menu 出現 漢堡變X  */
+    .item.menu_btn.on .burger:nth-child(1){
+        transform: rotate(45deg);
+        transition: .5s;
+    }
+    .item.menu_btn.on .burger:nth-child(3){
+        transform: translateY(-300%) rotate(135deg);
+        transition: .5s;
+    }
+    .item.menu_btn.on .burger:nth-child(2n){
+        display: none;
+        transition: .5s;
+    }
+    .item.menu_btn.on .burger:nth-child(5){
+        display: none;
+        transition: .5s;
+    }
+    /* 漢堡選單 */
     /* 手機 menu 出現 */
     .menu.on{
         transform: translate(0%, 0) rotate(0deg);
@@ -353,57 +307,92 @@ input[type="checkbox"]{
     .menu li>ul{
         display: none;
     }
-    /* menu */
-
-    /* 漢堡選單 */
-    .menu_btn{
-        width: 50px;
-        padding: 5px 10px;
-        display: flex;
+    /* 搜尋 */
+    .search_bar::before{
+        content:'Search : ';
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .search_bar{
+        transform: translate(150%, -150%);
         flex-direction: column;
-        align-items: flex-end;
+        position: absolute;
+        justify-content: center;
+        width: 80vw;
+        height: 50vh;
+        background-color: #fff;
+        box-shadow: 50px 50px 10px 1px #0006;
+        /* box-shadow: -20px 20px 10px 1px #0006; */
+        top: 200%;
+        right: 20%;
+        background: linear-gradient(to left bottom, transparent 50%, #ccc 0) no-repeat 100% 0 / 2em 2em,
+        linear-gradient(-135deg, transparent 1.41em, #fff 0);
+        transition: .5s;
     }
-    .menu_btn.on{
-        z-index: 5;
+    ::placeholder{
+        /* font-size: 3.8vw; */
+        font-size: 12px;
     }
-    .burger{
-        margin: 2px 10px;
-        background-color: var(--subcolordark);
-        display: block;
-        height: 2px;
-        width: 20px;
-        text-align: right;
+    .item.search{
+        display: flex;
+        align-items: center;
     }
-    .menu_btn :nth-child(even){
-        height: 1px;
-        width: 16px;
-    }
-    .menu_btn :nth-child(5){
+    .img_search{
         width: 12px;
     }
-    /* 手機 menu 出現 漢堡變X  */
-    .menu_btn.on .burger:nth-child(1){
-        transform: rotate(45deg);
-        transition: .5s;
+    .img_btn{
+        width: 25px;
     }
-    .menu_btn.on .burger:nth-child(3){
-        transform: translateY(-300%) rotate(135deg);
-        transition: .5s;
+    .img_search.magnifer{
+        padding-top: 5px;
+        width: 20px;
     }
-    .menu_btn.on .burger:nth-child(2n){
-        display: none;
-        transition: .5s;
+    .img_search.cancel{
+        width: 15px;
     }
-    .menu_btn.on .burger:nth-child(5){
-        display: none;
-        transition: .5s;
+    .search_show{
+        display: block;
+        padding: 5px 10px;
     }
-    /* 漢堡選單 */    
+    .search_type{
+        /* font-size: 14px; */
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 20px;
+        padding-right: 30px;
+        background-color: var(--subbgcolor);
+    }
+    .search_bar_cancel{
+        position: relative;
+        background-color: var(--subcolor);
+        border-radius: 25px;
+    }
+    .search_cancel{
+        position: absolute;
+        width: 12px;
+        left: 90%;
+        bottom: 24%;
+    }
+    /* 手機 search bar 出現 */
+    .search_bar.on{
+        transform: translate(0%, 0);
+    }
+    /* 搜尋 */
 }
 /* header 手機 end */
 
-/* header 平板以上 start */
-@media screen and (min-width: 768px) {
+/* header transation start */
+/* @media screen and (min-width: 992px) and (max-width:  768px) {
+    .search_type{
+        display: none;
+    } */
+/* header transation end */
+
+/* header 桌機 start */
+@media screen and (min-width: 768px){
     /* menu 滑動下底線上層定位 */
     .menu li, .sales, .columns{
         position: relative;
@@ -461,20 +450,59 @@ input[type="checkbox"]{
     }
     .menu li, .menu div{
         margin: 0 10px;
+        padding: 5px 0;
         box-sizing: border-box;
     }
+    .search{
+        position: relative;
+        padding: 2px 0;
+    }
+    .search_type{
+        width: 80%;
+        padding: 0 20px;
+        margin: 0 10px;
+        position: relative;
+        border-radius: 50px;
+        background-color: #fff;
+    }
+    .item.search{
+        border-radius: 30px;
+        background-color: var(--npurewhite);
+    }.search_show{
+        position: absolute;
+        width: 12px;
+        top: 15%;
+        left: 2%;
+        cursor: auto;
+        z-index: 5;
+    }
+    .img_search.magnifer{
+        width: 18px;
+    }
+    .search_type{
+        width: 250px;
+        height: 20px;
+        background-color: #fff;
+    }
+    .search_cancel{
+        position: absolute;
+        width: 12px;
+        right: 3%;
+    }
 }
-/* header 平板以上 end */
-/* header section end */
+/* header 桌機 end */
+/* header section end*/
 
 /* web_title section start */
-/* web_title 共用  start*/
+/* .full.web_title{
+    overflow: hidden;
+} */
 .container.web_title{
     padding-top: 0;
     padding-bottom: 120px;
     overflow: hidden;
 }
-.col_8.col_md_6.title_and_search{
+.col_8.col_lg_6.title_and_search{
     padding-top: 130px;
     position: relative;
     z-index: 2;
@@ -490,8 +518,8 @@ input[type="checkbox"]{
     color: var(--maincolor);
     font-family: 'Hina Mincho';
 }
-/* web_title 的搜尋欄 */
-.web_title .search, .web_title .search_bar{
+/* web_title 的搜尋欄 start */
+.web_title .item.search, .web_title .search_bar{
  background-color: transparent;
 }
 .web_title .search_bar_cancel{
@@ -501,22 +529,19 @@ input[type="checkbox"]{
 }
 .web_title .search_type{
     background-color: var(--subbgcolor);
-    border-radius: 25px;
-    padding-left: 25px;
 }
 .web_title .search_show{
     position: absolute;
         width: 12px;
-        padding-left: 10px;
+        top: 15%;
         left: 2%;
         cursor: auto;
         z-index: 3;
 }
 .web_title .search_cancel{
     position: relative;
-    right: 20px;
 }
-/* web_title 共用  end*/
+/* web_title 的搜尋欄 end */
 .key_word{
     padding-top: 20px;
 }
@@ -533,7 +558,6 @@ input[type="checkbox"]{
 .key_word a:hover{
     color: var(--maincolor);
 }
-/* web_title rolling_pics */
 .rolling_pics{
     position: relative;
     padding-left: 60px;
@@ -545,63 +569,55 @@ input[type="checkbox"]{
     margin: 0, 0, 0 auto;
     z-index: 0;
 }
+.rolling_pics .item.left{
+    animation: slider 10s linear infinite;
+}
+.rolling_pics .item.left a{
+    animation: slider 10s linear infinite;
+}
+.rolling_pics .item.left a img{
+    animation: slider 10s linear infinite;
+}
+@keyframes slider{
+    0%{left: 0px}
+   20%{left: -300px}
+   50%{left: -600px}
+   70%{left: -900px}
+   90%{left: -1200px}
+}
 .rolling_pics img{
-    width: 180px;
-    padding-right: 20px;
-}
-@keyframes railUp{
-    0%{top: 0px}
-    20%{top: -300px}
-    50%{top: -600px}
-    70%{top: -900px}
-    90%{top: -1200px}
-}
-@keyframes railDown{
-    0%{top: 0px}
-    20%{top: 300px}
-    50%{top: 600px}
-    70%{top: 900px}
-    90%{top: 1200px}
-}
-.rolling_pics .left, .rolling_pics .middle, .rolling_pics .right{
-    position: relative;
-    animation: railUp 25s linear infinite;
-}
-.rolling_pics .middle{
-    animation: railDown 25s linear infinite;
+    width:  160px;
+    padding: 15px;
 }
 
-/* web_title 手機 start*/
-@media screen  and (max-width: 767px) {
+/* web_title 手機 start */
+@media screen  and (max-width: 768px) {
     .web_title.container{
         padding-bottom: 120px;
     }
     .web_title .title_and_search{
         position: relative;
         z-index: 2;
+        padding: 0;
     }
     .web_title .title_and_search h1, .web_title .title_and_search span{
         font-size: 8vw;
         line-height: 15vw;
         
     }
-    .web_title .search, .web_title .key_word{
+    .web_title .item.search, .web_title .item.key_word{
         display: none;
     }
 }
-/* web_title 手機 end*/
+/* web_title 手機 end */
 
-/*  web_title 平板以上 start */
-@media screen  and (max-width: 992px){
-    .key_word span, .key_word li, .key_word a{
-        font-size: .5rem;
-    }
+/* web_title 桌機 start */
+@media screen and (min-width: 768px) {
 }
-/*  web_title 平板以上 end */
+/* web_title 桌機 end */
 /* web_title section end */
 
 /* good_points section start */
-/*good_points 共用  start*/
 .full.good_points{
     background-color: var(--subcolor);
 }
@@ -613,29 +629,32 @@ input[type="checkbox"]{
     font-weight: 500;
     color: var(--maincolor);
 }
-.col_12.col_md_12.intro, .col_12.col_md_4.points{
+.col_12.col_lg_12.intro, .col_12.col_lg_4.points{
     padding-bottom: 60px;
 }
-.col_12.col_md_4.points h2{
+.col_12.col_lg_4.points h2{
     line-height: 6vh;
     padding: 0 20px;
 }
-.col_12.col_md_4.points img{
+.col_12.col_lg_4.points img{
     padding-bottom: 40px;
+}
+.points{
+    display: flex;
+    flex-direction: column;
 }
 .detail img{
     width: 60px;
     display: block;
     margin:auto;
 }
-/*good_points 共用  end*/
 
-/*good_points 手機  start*/
-.points{
-    display: flex;
-    flex-direction: column;
-}
+
+
+/* good_points 手機 start */
 /* good_points 手機 end */
+/* good_points 桌機 start */
+/* good_points 桌機 end */
 /* good_points section end */
 
 /* most_read section start */
@@ -659,7 +678,7 @@ input[type="checkbox"]{
     justify-content: center;
     padding-top: 20px;
 }
-/* .most_read {
+/* .most_read .item{
     margin: 20px;
     overflow: hidden;
 } */
@@ -687,7 +706,7 @@ input[type="checkbox"]{
     flex-direction: column;
     justify-content: space-around;
 }
-.selected_cover h3, .selected_cover p{
+.selected_cover h3, p{
     font-size: 20px;
     color: #fff;
     padding: 10px;
@@ -728,7 +747,7 @@ input[type="checkbox"]{
 
 /* most recommended section */
 /* full recom */
-.col_12.col_md_12.most_recom{
+.col_12.col_lg_12.most_recom{
     display: block;
 }
 .recom{
@@ -738,7 +757,7 @@ input[type="checkbox"]{
 /* flip comment book */
 /* flip comment div */
 .full.most_recom{
-    background-color: var(--subcolor);
+    background-color: var(--subbgcolor);
 }
 .flip_comment{
     width: 100%;
@@ -754,8 +773,7 @@ input[type="checkbox"]{
     padding: 0 100px;
     margin: auto;
     width: 350px;
-    width: calc((60%/2) - 2px);
-    height: 450px;
+    height: 500px;
     position: relative;
     transition: transform 1s;
 }
@@ -829,6 +847,7 @@ input[type="checkbox"]{
     box-sizing: inline-block;
     border: none;
     background-color: transparent;
+    cursor: pointer;
     margin: 10px;
     transition: transform 1s;
 }
@@ -881,9 +900,6 @@ input[type="checkbox"]{
 .full.footer{
     background-color: var(--subcolor);
 }
-.container.footer{
-    padding-top: 40px;
-}
 .footer h4{
     color: var(--maincolor);
     padding: 10px 0;
@@ -932,3 +948,39 @@ input[type="checkbox"]{
 
 
 /* footer section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $('#books_btn_close_more_row1').click(function(){
+    //     console.log('check');
+    //     $('.row.close.book').accordion({collapsible: true});
+    //   });
+    
+    // let documentWidth = $(window).width();
+    // $(window).load(function(){
+    //     if( documentWidth <= 992){
+    //         console.log("trigger");
+    //         $('.day_read').removeClaee('<br>');
+    //     }
+    // });
+    
+    // $(window).load(function(){
+    //     $('.item.left>img').animate({
+    //         left: '0px',
+    //         backgroundColor: '#2ebce',
+    //     },2000, 'easeInshine');
+    // })
+    

@@ -1,0 +1,380 @@
+/* header 手機 start */
+@media screen and (max-width: 768px) {
+
+    .nav{
+        position: relative;
+        justify-content: flex-end;
+    }
+    .menu{
+        position: fixed;
+        top: 2%;
+        right: 3%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        height: 80vh;
+        width: 95vw;
+        transform: translate(130%, 0) rotate(45deg);
+        z-index: 5;
+        justify-content: space-between;
+        transition: .5s;
+    }
+    .menu ul{
+        margin: 0;
+    }.menu a{
+        color: var(--fontcolor);
+    }
+    
+    /* 手機 menu 出現 */
+    .menu.on{
+        transform: translate(0%, 0) rotate(0deg);
+        transition: .5s;
+        overflow-y: scroll;
+    }
+    .menu a{
+        font-size: 8vh;
+        font-style: italic;
+        font-weight: 200;
+        display: block;
+        text-align: center;
+        padding: 5vh 0;
+    }
+    .menu a:first-child{
+        margin-top: 5vh;
+    }
+    .menu li>ul{
+        display: none;
+    }
+    /* 搜尋 */
+    .header .item.search{
+        display: block;
+    }
+    .header .search_bar::before{
+        content:'Search : ';
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .header .search_bar{
+        transform: translate(200%, -150%);
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        width: 90vw;
+        height: 50vh;
+        background-color: #fff;
+        box-shadow: 50px 50px 10px 1px #0006;
+        /* box-shadow: -20px 20px 10px 1px #0006; */
+        top: 180%;
+        right: 10%;
+        background: linear-gradient(to left bottom, transparent 50%, #ccc 0) no-repeat 100% 0 / 2em 2em,
+        linear-gradient(-135deg, transparent 1.41em, #fff 0);
+        transition: .5s;
+    }
+    ::placeholder{
+        /* font-size: 3.8vw; */
+        font-size: 12px;
+    }
+    .header .item.search{
+        display: flex;
+        align-items: center;
+    }
+    .header .img_search{
+        width: 12px;
+    }
+    .img_btn{
+        width: 25px;
+    }
+    .header .img_search.magnifer{
+        padding-top: 5px;
+        width: 20px;
+    }
+    .header .img_search.cancel{
+        width: 15px;
+    }
+    .header .search_show{
+        display: block;
+        padding: 5px 10px;
+    }
+    .header .search_type{
+        /* font-size: 14px; */
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 20px;
+        padding-right: 30px;
+        background-color: var(--subbgcolor);
+    }
+    .header .search_bar_cancel{
+        position: relative;
+        background-color: var(--subcolor);
+        border-radius: 25px;
+    }
+    .header .search_cancel{
+        position: absolute;
+        width: 12px;
+        left: 90%;
+        bottom: 24%;
+    }
+    /* 手機 search bar 出現 */
+    .header .search_bar.on{
+        transform: translate(0%, 0);
+    }
+    .search_bar::before{
+        content:'Search : ';
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    
+}
+/* header 手機 end */
+
+@media screen and (max-width: 992px) and (min-width: 756px) {
+    /* menu 滑動下底線上層定位 */
+    .menu li, .sales, .columns{
+        position: relative;
+    }
+    /* menu 滑動下底線 滑動前 */
+    .menu a::after{
+        content:'';
+        position: absolute;
+        width: 0%;
+        top: 80%;
+        left: 0;
+        border-bottom: 2px solid var(--npurewhite);
+        transition: 1s;
+    }
+    /* menu 滑動下底線 滑動後 */
+    .menu a:hover::after{
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu .sales a:hover::after{
+        content:'';
+        border-bottom: 2px solid var(--maincolor);
+        width: 100%;
+        transition: 1s;
+    }
+    /* 下拉式選單隱藏 */
+    .menu li>ul{
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        background-color: #fff;
+        border-radius: 5px;
+        display: none;
+        transition: .5s;
+    }
+    /* 下拉式選單出現 */
+    .menu li:hover>ul{
+        display: block;
+        transition: .5s;
+    }
+    /* 下拉是選單 主選單滑動下底線 */
+    .menu li:hover #booksLink::after {
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu li:hover #bestSellersLink::after {
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu li, .menu div{
+        margin: 0 10px;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+    .header .item.search{
+        display: block;
+    }
+    .header .search_bar::before{
+        content:'Search : ';
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .header .search_bar{
+        transform: translate(200%, -150%);
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        width: 85vw;
+        height: 50vh;
+        background-color: #fff;
+        box-shadow: 50px 50px 10px 1px #0006;
+        /* box-shadow: -20px 20px 10px 1px #0006; */
+        top: 180%;
+        right: 10%;
+        background: linear-gradient(to left bottom, transparent 50%, #ccc 0) no-repeat 100% 0 / 2em 2em,
+        linear-gradient(-135deg, transparent 1.41em, #fff 0);
+        transition: .5s;
+    }
+    ::placeholder{
+        /* font-size: 3.8vw; */
+        font-size: 12px;
+    }
+    .header .item.search{
+        display: flex;
+        align-items: center;
+    }
+    .header .img_search{
+        width: 12px;
+    }
+    .img_btn{
+        width: 25px;
+    }
+    .header .img_search.magnifer{
+        padding-top: 5px;
+        width: 20px;
+    }
+    .header .img_search.cancel{
+        width: 15px;
+    }
+    .header .search_show{
+        display: block;
+        padding: 5px 10px;
+    }
+    .header .search_type{
+        /* font-size: 14px; */
+        width: 100%;
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 20px;
+        padding-right: 30px;
+        background-color: var(--subbgcolor);
+    }
+    .header .search_bar_cancel{
+        position: relative;
+        background-color: var(--subcolor);
+        border-radius: 25px;
+    }
+    .header .search_cancel{
+        position: absolute;
+        width: 12px;
+        left: 90%;
+        bottom: 24%;
+    }
+    /* 手機 search bar 出現 */
+    .header .search_bar.on{
+        transform: translate(0%, 0);
+    }
+}
+
+/* header transation start */
+/* @media screen and (min-width: 992px) and (max-width:  768px) {
+    .search_type{
+        display: none;
+    } */
+/* header transation end */
+
+/* header 桌機 start */
+@media screen and (min-width: 992px){
+    /* menu 滑動下底線上層定位 */
+    .menu li, .sales, .columns{
+        position: relative;
+    }
+    /* menu 滑動下底線 滑動前 */
+    .menu a::after{
+        content:'';
+        position: absolute;
+        width: 0%;
+        top: 80%;
+        left: 0;
+        border-bottom: 2px solid var(--npurewhite);
+        transition: 1s;
+    }
+    /* menu 滑動下底線 滑動後 */
+    .menu a:hover::after{
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu .sales a:hover::after{
+        content:'';
+        border-bottom: 2px solid var(--maincolor);
+        width: 100%;
+        transition: 1s;
+    }
+    /* 下拉式選單隱藏 */
+    .menu li>ul{
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        background-color: #fff;
+        border-radius: 5px;
+        display: none;
+        transition: .5s;
+    }
+    /* 下拉式選單出現 */
+    .menu li:hover>ul{
+        display: block;
+        transition: .5s;
+    }
+    /* 下拉是選單 主選單滑動下底線 */
+    .menu li:hover #booksLink::after {
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu li:hover #bestSellersLink::after {
+        content:'';
+        border-bottom: 2px solid var(--subcolordark);
+        width: 100%;
+        transition: 1s;
+    }
+    .menu li, .menu div{
+        margin: 0 10px;
+        padding: 5px 0;
+        box-sizing: border-box;
+    }
+    .search{
+        position: relative;
+        padding: 2px 0;
+    }
+    .search_type{
+        width: 80%;
+        padding: 0 20px;
+        margin: 0 10px;
+        position: relative;
+        border-radius: 50px;
+        background-color: #fff;
+    }
+    .item.search{
+        border-radius: 30px;
+        background-color: var(--npurewhite);
+    }.search_show{
+        position: absolute;
+        width: 12px;
+        top: 15%;
+        left: 2%;
+        cursor: auto;
+        z-index: 5;
+    }
+    .img_search.magnifer{
+        width: 18px;
+    }
+    .search_type{
+        width: 250px;
+        height: 20px;
+        background-color: #fff;
+    }
+    .search_cancel{
+        position: absolute;
+        width: 12px;
+        right: 3%;
+    }
+}
+/* header 桌機 end */
+/* header section end*/

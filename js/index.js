@@ -84,16 +84,3 @@ function goPrevPage(){
         currentLocation--;
     }
 }
-
-
-
-// let i = 1;
-// $('#booksBtnCloseMoreCate1').click(function(){
-//     console.log('show');
-//     $('#cate1CloseBook').addClass('on');
-//     let newID = `cate1CloseBook${i}`;
-//     i++;
-//     $('#cate1CloseBook').clone().attr('ID', newID).insertBefore(`.close_more.btn`);
-//     $(newID).addClass('.row.close.books');
-    
-// });

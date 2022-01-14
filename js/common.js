@@ -1,6 +1,6 @@
+//common start
 // search 設定
 // search txt 文字清空
-
 $('.search_cancel_btn').click(function(){
     console.log("searchCancel click");
     console.log($('.search_type').val());
@@ -16,109 +16,39 @@ $('#searchShowNav').click(function(){
 // menu 顯示
 $('#burgerBtns').click(function(){
     console.log("burgerBtnOn click");
-    $('.item.menu').toggleClass('on');
+    $('.menu').toggleClass('on');
     $('#burgerBtns').toggleClass('on');
 });
+//common end
 
-// let documentWidth = $(window).width();
-// $(window).load(function(){
-//     if( documentWidth <= 992){
-//         console.log("trigger");
-//         $('.day_read').removeClaee('<br>');
-//     }
-// });
+//Books start
+// Books 產品 more 顯示(複製)
+let i = 1;
+$('#booksBtnCloseMoreCate1').click(function(){
+    console.log('show');
+    $('#cate1Book').addClass('on');
+    let newID = `cate1Book${i}`;
+    i++;
+    $('#cate1Book').clone().attr('ID', newID).insertBefore('#booksBtnCloseMoreCate1Div');
+    $(newID).addClass('.row.books_row');
+});
 
-// $(window).load(function(){
-//     $('.item.left>img').animate({
-//         left: '0px',
-//         backgroundColor: '#2ebce',
-//     },2000, 'easeInshine');
-// })
+$('#booksBtnCloseMoreCate2').click(function(){
+    console.log('show');
+    $('#cate2Book').addClass('on');
+    let newID = `cate2Book${i}`;
+    i++;
+    $('#cate2Book').clone().attr('ID', newID).insertBefore('#booksBtnCloseMoreCate2Div');
+    $(newID).addClass('.row.books_row');
+});
 
+$('#booksBtnCloseMoreCate3').click(function(){
+    console.log('show');
+    $('#cate3Book').addClass('on');
+    let newID = `cate3Book${i}`;
+    i++;
+    $('#cate3Book').clone().attr('ID', newID).insertBefore('#booksBtnCloseMoreCate3Div');
+    $(newID).addClass('.row.books_row');
+});
+//Books end
 
-// Reference to DOM Elements
-window.addEventListener("load", function(){console.log("next")});
-const prevBtn = document.querySelector("#flip_comment_prev_btn");
-const nextBtn = document.querySelector("#flip_comment_next_btn");
-const flipBook = document.querySelector("#flip_comment_book");
-
-const paper1 = document.querySelector("#p1");
-const paper2 = document.querySelector("#p2");
-
-// Event Listener
-prevBtn.addEventListener("click", goPrevPage);
-nextBtn.addEventListener("click", goNextPage);
-
-// Business Logic
-let currentLocation = 1;
-let numOfPages = 2;
-let maxLocation = numOfPages + 1;
-
-function openBook(){
-    flipBook.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-180px)";
-    nextBtn.style.transform = "translateX(180px)";
-}
-function closeBook(isAtBeginning){
-    if(isAtBeginning){
-        flipBook.style.transform = "translateX(0%)";
-    }else{
-        flipBook.style.transform = "translateX(100%)";
-    }
-    flipBook.style.transform = "translateX(0%)";
-    prevBtn.style.transform = "translateX(0px)";
-    nextBtn.style.transform = "translateX(0px)";
-}
-function goNextPage(){
-    console.log("next");
-    if(currentLocation < maxLocation){
-        switch(currentLocation){
-            case 1:
-                openBook();
-                paper1.classList.add("flipped");
-                paper1.style.zIndex =1;
-                break;
-            case 2:
-                paper2.classList.add("flipped");
-                
-                paper2.style.zIndex =2;
-                break;
-            default:
-                throw new Error("unknown state");
-            case 3:
-                paper3.classList.add("flipped");
-                break;
-            case 4:
-                paper4.classList.add("flipped");
-                closeBook();
-                break;    
-        }
-        currentLocation++;
-    }
-}
-function goPrevPage(){
-    if(currentLocation > 1){
-        switch(currentLocation){
-            case 2:
-                closeBook();
-                paper1.classList.remove("flipped");
-                paper1.style.zIndex = 3;
-                break;
-            case 3:
-                openBook();
-                paper2.classList.remove("flipped");
-                paper2.style.zIndex = 2;
-                break;
-            default:
-                throw new Error("unknown state");
-            // case 4:
-            //     paper4.classList.remove("flipped");
-            //     paper2.style.zIndex = 1;
-            //     break;
-            // case 5:
-            //     paper4.classList.add("flipped");
-            //     break;      
-        }
-        currentLocation--;
-    }
-}

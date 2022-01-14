@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Read | Books</title>
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script type="text/javascript" src="js/jquery.js" defer></script>
+    <script type="text/javascript" src="js/jquery-ui.js" defer></script>
+    <script type="text/javascript" src="js/common.js" defer></script> 
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+    <header class="full header">
+        <div class="container header">
+            <div class="row header">
+                <div class="col_12 col_md_12 header">
+                    <div class="logo">
+                        <a href="link_home"><img src="pics/logo/logo_day_read.png" alt="logo" class="img_logo"></a>
+                    </div>
+                    <nav class="nav">
+                        <div class="menu">
+                            <ul class="drop_menu books">
+                                <li>
+                                    <a href="link_books" id="booksLink">Books</a>
+                                    
+                                    <ul class="first_layer">
+                                            <li class="ebook"><a href="javascript:void(0)">Ebook</a></li>
+                                            <li class="magazine"><a href="javascript:void(0)">Magazine</a></li>
+                                            <li class="soundbook"><a href="javascript:void(0)">Soundbook</a></li>
+                                            <li class="subscribe"><a href="javascript:void(0)">Subscribe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="sales">
+                                <a href="link_sales">Sales</a>
+                            </div>
+                            <ul class="drop_menu bestsellers">
+                                <li>
+                                    <a href="link_best_sellers" id="bestSellersLink">Bestsellers</a>
+
+                                    <ul class="first_layer">
+                                        <li class="hot_sale"><a href="">Hot Sale</a></li>
+                                        <li class="pal_sale"><a href="">Recommended</a></li>
+                                        <li class="new_sale"><a href="">New Arrival</a></li>
+                                        <li class="serie_sale"><a href="">Series</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="columns">
+                                <a href="link_columns">Columns</a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <label for="searchShowNav" class="search_show"><img class="img_search magnifer" src="pics/icon/button/search_maincolor.png" alt="search show"></label>
+                                <input type="button" id="searchShowNav" class="search_show_btn">
+                            <div class="search_bar">
+                                <div class="search_bar_cancel">
+                                    <label for="searchBarNav"></label>
+                                    <input type="search" id="searchBarNav" class="search_type" placeholder="Search by Title, Author or ISBN">
+                                    <label for="searchCancelNav" class="search_cancel"><img class="img_search cancel" src="pics/icon/button/cross_maincolor.png" alt="cancel"></label>
+                                    <input type="button" id="searchCancelNav" class="search_cancel_btn"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav_btns">
+                            <a href="link_shopping_bag" class="shopping_bag">
+                                <img src="pics/icon/button/shopping_bag_subcolordark.png" alt="" class="img_btn">
+                            </a>
+                            <a href="link_personal_study" class="personalstudy">
+                                <img src="pics/icon/button/personal_study_maincolor.png" alt="personal_study_btn" class="img_btn">
+                            </a>
+                        </div>
+                        <div class="menu_btn" id="burgerBtns">
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="full title">
+        <div class="container title">
+            <div class="row title">
+                <div class="col_12 col_md_12 title">
+                    <div class="title">
+                        <h1 class="title">Books</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="full aside books">
+        <div class="container aside books">
+            <div class="row aside books">
+                <div class="col_md_2 aside">
+                    <aside class="aside">
+                        <div class="filter">
+                            <p>Filter</p>
+                        </div>
+                        <div class="formates">
+                            <p>Formates : </p>
+                            <ul class="cates">
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">EPUB</a></li>
+                                <li><a href="#">PDF</a></li>
+                                <li><a href="#">JPG</a></li>
+                            </ul>
+                        </div>
+                        <div class="cates">
+                            <p>Categories : </p>
+                            <ul class="cates">
+                                <li><a href="#">Nonfiction</a></li>
+                                <li><a href="#">Fiction</a></li>
+                                <li><a href="#">Travel</a></li>
+                                <li><a href="#">Business / Economics</a></li>
+                                <li><a href="#">Romance</a></li>
+                                <li><a href="#">Thriller</a></li>
+                            </ul>
+                        </div>
+                        <div class="publisher">
+                            <p>Publishers : </p>
+                            <ul class="publishers">
+                                <li><a href="#">Ages</a></li>
+                                <li><a href="#">Simon & Schuster</a></li>
+                                <li><a href="#">Hachette Livre</a></li>
+                                <li><a href="#">Oxford University</a></li>
+                                <li><a href="#">HarperCollins</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col_10 books">
+                    <div class="books">
+                        <div class="row books">
+                            <h2 class="col_12 col_md_12 title_sub">
+                                Fiction
+                            </h2>
+                            <div class="row books_row" id="cate1Book">
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_grass.jpg" alt="product picture"></a>
+                                            <p class="book name">Remembering That Time When We Forgot</p>
+                                            <p class="book price">
+                                                $<span>3.55</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_woman.jpg" alt="product picture"></a>
+                                            <p class="book name">The Three Month Rule</p>
+                                            <p class="book price">
+                                                $<span>10</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product">
+                                                <div class="tag">6.0 <br> ★</div>
+                                                <img src="pics/product/book/book_never_have.jpg" alt="product picture">
+                                            </a>
+                                            <p class="book name">Every Thing You Never Had</p>
+                                            <p class="book price">
+                                                $<span>3.55</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_marriage_war.jpg" alt="product picture"></a>
+                                            <p class="book name">A Story of Marriage and War </p>
+                                            <p class="book price">
+                                                $<span>8.4</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_shore_break.jpg" alt="product picture"></a>
+                                            <p class="book name">Shore Breaks at Beechtown</p>
+                                            <p class="book price">
+                                                $<span>9.7</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_12 col_md_12 close_more btn" id="booksBtnCloseMoreCate1Div">
+                                <label for="booksBtnCloseMoreCate1" class="btn_close_more" value>More</label>
+                                <input type="checkbox" id="booksBtnCloseMoreCate1" ></label>
+                            </div>
+                        </div>
+                        <div class="row books">
+                            <h2 class="col_12 col_md_12 title_sub">
+                                Art
+                            </h2>
+                            <div class="row books_row" id="cate2Book">
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_happy_lemon.jpg" alt="product picture"></a>
+                                            <p class="book name">Happy Lemon</p>
+                                            <p class="book price">
+                                                $<span>2.3</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_outside_the_box.jpg" alt="product picture"></a>
+                                            <p class="book name">Think Outside The Box</p>
+                                            <p class="book price">
+                                                $<span>10.99</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product">
+                                                <img src="pics/product/book/book_yellow_tower.jpg" alt="product picture">
+                                            </a>
+                                            <p class="book name">Life to The Top</p>
+                                            <p class="book price">
+                                                $<span>0.89</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_black_photo.jpg" alt="product picture"></a>
+                                            <p class="book name">The Open Seasons</p>
+                                            <p class="book price">
+                                                $<span>7.77</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product">
+                                                <div class="tag">5.9 <br> ★</div>
+                                                <img src="pics/product/book/book_monster.jpg" alt="product picture">
+                                            </a>
+                                            <p class="book name">Illustrating Monster</p>
+                                            <p class="book price">
+                                                $<span>12.2</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_12 col_md_12 close_more btn" id="booksBtnCloseMoreCate2Div">
+                                <label for="booksBtnCloseMoreCate2" class="btn_close_more" value>More</label>
+                                <input type="checkbox" id="booksBtnCloseMoreCate2" ></label>
+                            </div>
+                        </div>
+                        <div class="row books">
+                            <h2 class="col_12 col_md_12 title_sub">
+                                Poetry
+                            </h2>
+                            <div class="row books_row" id="cate3Book">
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_moon.jpg" alt="product picture"></a>
+                                            <p class="book name">Breaking</p>
+                                            <p class="book price">
+                                                $<span>1.1</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_lost.jpg" alt="product picture"></a>
+                                            <p class="book name">Lost</p>
+                                            <p class="book price">
+                                                $<span>4.99</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product">
+                                                <div class="tag">5.7 <br> ★</div>
+                                                <img src="pics/product/book/book_journey_star.jpg" alt="product picture">
+                                            </a>
+                                            <p class="book name">Journey to the Star</p>
+                                            <p class="book price">
+                                                $<span>99</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_death.jpg" alt="product picture"></a>
+                                            <p class="book name">Death od Ever and Ever</p>
+                                            <p class="book price">
+                                                $<span>88</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_serect.jpg" alt="product picture"></a>
+                                            <p class="book name">Serects</p>
+                                            <p class="book price">
+                                                $<span>50</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_12 col_md_12 close_more btn" id="booksBtnCloseMoreCate3Div">
+                                <label for="booksBtnCloseMoreCate3" class="btn_close_more" value>More</label>
+                                <input type="checkbox" id="booksBtnCloseMoreCate3" ></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="full footer">
+        <section class="container footer ">
+            <div class="row footer up">
+                <div class="col_12 col_md_12 footer up">
+                    <div class="row row_cols_md_5">
+                        <div class="col_6 cate service">
+                            <h4 class="service_title">Member
+                            </h4>
+                            <div class="web_map">
+                                <a href="javascript:void(0)">Web Map</a>
+                            </div>
+                            <div class="qa">
+                                <a href="javascript:void(0)">Q&A</a>
+                            </div>
+                            <div class="policy">
+                                <a href="javascript:void(0)">Policy</a>
+                            </div>
+                            <div class="feedback">
+                                <a href="javascript:void(0)">Feedback</a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate about">
+                            <h4 class="title_about">About Day Read</h4>
+                            <div class="our_story">
+                                <a href="">Our Story</a>
+                            </div>
+                            <div class="yearly_plan">
+                                <a href="">Yearly Plan</a>
+                            </div>
+                            <div class="cooperation">
+                                <a href="">Cooperation Program</a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate contact">
+                            <h4 class="contact_title">Contact Us</h4>
+                            <div class="online_service">
+                                <a href="javascript:void(0)">Online Service</a>
+                            </div>
+                            <div class="ai_assistant">
+                                <a href="javascript:void(0)">Ai Assistant</a>
+                            </div>
+                            <span class="phone">Phone:</span>
+                            <br>
+                            <span class="phone_number">02-95274616</span>
+                        </div>
+                        <div class="col_6 cate app">
+                            <h4 class="application_title">Application</h4>
+                            <div class="app_google">
+                                <a href="javascript:void(0)" class="img_google_play">
+                                    <img src="pics/icon/footer/googleplay_subcolordark.png" alt="google_play">
+                                </a>
+                            </div>
+                            <div class="app_apple">
+                                <a href="javascript:void(0)" class="img_apple_store">
+                                    <img src="pics/icon/footer/appstore_maincolor.png" alt="apple_store">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate social_media">
+                            <h4 class="social_media_title">Social Media</h4>
+                            <div class="soicalmedia_up">
+                                <a href="javascript:void(0)" class="img_facebook">
+                                    <img src="pics/icon/footer/facebook_subcolordark.png" alt="facebook">
+                                </a>
+                                <a href="javascript:void(0)" class="img_instagram">
+                                    <img src="pics/icon/footer/instagram_maincolor.png" alt="instagram">
+                                </a>
+                                <a href="javascript:void(0)" class="img_line">
+                                    <img src="pics/icon/footer/line_subcolordark.png" alt="line">
+                                </a>
+                            </div>
+                            <div class="soicalmedia_down">
+                                <a href="javascript:void(0)" class="img_twitter">
+                                    <img src="pics/icon/footer/twitter_maincolor.png" alt="twitter">
+                                </a>
+                                <a href="javascript:void(0)" class="img_youtube">
+                                    <img src="pics/icon/footer/youtube_subcolordark.png" alt="youtube">
+                                </a>
+                                <a href="javascript:void(0)" class="img_twitch">
+                                    <img src="pics/icon/footer/twitch_maincolor.png" alt="twitch">
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer down">
+                <div class="col_12 col_md_12 footer down">
+                    <span class="copy_right">
+                        本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.tibame.com/">「TibaMe-前端設計工程師養成班」</a>，後續會由專人協助處理。
+                        <br>
+                        <br>
+                        Copyright © 2021, DayRead EBook, Inc.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_brain.jpg" alt="product picture"></a>
+                                            <p class="book name">The Lives Inside Your Head</p>
+                                            <p class="book price">
+                                                $<span>4.85</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->
+<!-- <div class="col_12 col_md_2 book">
+                                    <div class="book">
+                                        <div class="book pic">
+                                            <a href="link_product" class="link product"><img src="pics/product/book/book_brain.jpg" alt="product picture"></a>
+                                            <p class="book name">The Lives Inside Your Head</p>
+                                            <p class="book price">
+                                                $<span>4.85</span>
+                                            </p>
+                                            <a href="link_shop_bag" class="link shop_bag">
+                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                                <input type="button" class="books_btn_shop_bag" >
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> -->

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slider_test.js"></script>
+    <style>
+        .rolling_pics{
+            display: flex;
+            /* transform: rotate(45deg); */
+        }
+        .rolling_pics img{
+            width:  160px;
+        }
+
+        
+        .item.left, .item.middle, .item.right{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+            animation: railUp 5s linear infinite;
+        }
+        .item.middle{
+            animation: railDown 5s linear infinite;
+        }
+
+        
+
+        @keyframes railUp{
+            0%{top: 0px}
+            20%{top: -300px}
+            50%{top: -600px}
+            70%{top: -900px}
+            90%{top: -1200px}
+        }
+        @keyframes railDown{
+            0%{top: 0px}
+            20%{top: 300px}
+            50%{top: 600px}
+            70%{top: 900px}
+            90%{top: 1200px}
+        }
+       
+
+
+        .rolling_pics img{
+            width:  160px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="col_4 col_md_6 rolling_pics">
+        <div class="item left">
+            <a href="link_product"><img src="pics/product/book/book_newyork.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_moutain.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_blue_starry_night.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_green_beach.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_rag_rich.jpg" alt=""></a>
+        </div>
+        <div class="item middle">
+            <a href="link_product"><img src="pics/product/book/book_bullet_journal.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_wise_choice.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_sunset.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_lost.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_woman.jpg" alt=""></a>
+        </div>
+        <div class="item right">
+            <a href="link_product"><img src="pics/product/book/book_rag_rich.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_moon.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_marriage_war.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_monster.jpg" alt=""></a>
+            <a href="link_product"><img src="pics/product/book/book_shore_break.jpg" alt=""></a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+/* web_title section start */
+        /* .full.web_title{
+            overflow: hidden;
+        } */
+        .container.web_title{
+            padding-top: 0;
+            padding-bottom: 120px;
+            overflow: hidden;
+        }
+        .col_8.col_md_6.title_and_search{
+            padding-top: 130px;
+            position: relative;
+            z-index: 2;
+        }
+        .slogan h1{
+            vertical-align: middle;
+            line-height: 4rem;
+            font-family: 'Hina Mincho';
+        }
+        .slogan h1 span{
+            font-size: 40px;
+            font-weight: 500;
+            color: var(--maincolor);
+            font-family: 'Hina Mincho';
+        }
+        /* web_title 的搜尋欄 start */
+        .web_title .item.search, .web_title .search_bar{
+        background-color: transparent;
+        }
+        .web_title .search_bar_cancel{
+            background-color: var(--subbgcolor);
+            padding: 0 2px;
+            border-radius: 25px;
+        }
+        .web_title .search_type{
+            background-color: var(--subbgcolor);
+            border-radius: 25px;
+            padding-left: 25px;
+        }
+        .web_title .search_show{
+            position: absolute;
+                width: 12px;
+                padding-left: 10px;
+                left: 2%;
+                cursor: auto;
+                z-index: 3;
+        }
+        .web_title .search_cancel{
+            position: relative;
+            right: 20px;
+        }
+        /* web_title key word */
+        .key_word{
+            padding-top: 20px;
+        }
+        .key_word ul{
+            display: flex;
+            text-decoration: none;
+        }
+        .key_word li{
+            padding: 0 5px;
+        }
+        .key_word a{
+            color:var(--subcolorgreen);
+        }
+        .key_word a:hover{
+            color: var(--maincolor);
+        }
+        .rolling_pics{
+            position: relative;
+            padding-left: 60px;
+            transform: rotate(45deg);
+            max-height: 500px;
+            top: -25%;
+            left: 25%;
+            display: flex;
+            margin: 0, 0, 0 auto;
+            z-index: 0;
+        }
+        .rolling_pics .item.left{
+            animation: slider 10s linear infinite;
+        }
+        .rolling_pics .item.left a{
+            animation: slider 10s linear infinite;
+        }
+        .rolling_pics .item.left a img{
+            animation: slider 10s linear infinite;
+        }
+        @keyframes slider{
+            0%{left: 0px}
+        20%{left: -300px}
+        50%{left: -600px}
+        70%{left: -900px}
+        90%{left: -1200px}
+        }
+        .rolling_pics img{
+            width:  160px;
+            padding: 15px;
+        }
+
+        /* web_title 手機*/
+        @media screen  and (max-width: 768px) {
+            .web_title.container{
+                padding-bottom: 120px;
+            }
+            .web_title .title_and_search{
+                position: relative;
+                z-index: 2;
+                padding: 0;
+            }
+            .web_title .title_and_search h1, .web_title .title_and_search span{
+                font-size: 8vw;
+                line-height: 15vw;
+                
+            }
+            .web_title .item.search, .web_title .item.key_word{
+                display: none;
+            }
+        }
+        @media screen  and (max-width: 1000px){
+            .key_word span, .key_word li, .key_word a{
+                font-size: .5rem;
+            }
+        }
+
+        /* web_title section end */
+
+
+        animation: railup 25s Plinear infinite;
+    animation-duration: 25s;
+    animation-timing-function: @linear;
+    animation-delay: Os;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: railup;
