@@ -1,0 +1,21 @@
+/* header */
+.menu #booksLink::after{
+    content:'';
+    border-bottom: 2px solid var(--subcolordark);
+    width: 100%;
+}
+.main_product .pic{
+    width: 200px;
+}
+.main_product .pic img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}

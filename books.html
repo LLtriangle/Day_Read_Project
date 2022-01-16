@@ -7,9 +7,9 @@
     <title>Day Read | Books</title>
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/books.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
     <script type="text/javascript" src="js/jquery.js" defer></script>
     <script type="text/javascript" src="js/jquery-ui.js" defer></script>
     <script type="text/javascript" src="js/common.js" defer></script> 
@@ -99,10 +99,11 @@
             </div>
         </div>
     </section>
+
     <section class="full aside books">
         <div class="container aside books">
             <div class="row aside books">
-                <div class="col_md_2 aside">
+                <div class="col_md_2 aside filter">
                     <aside class="aside">
                         <div class="filter">
                             <p>Filter</p>
@@ -110,31 +111,31 @@
                         <div class="formates">
                             <p>Formates : </p>
                             <ul class="cates">
-                                <li><a href="#">All</a></li>
-                                <li><a href="#">EPUB</a></li>
-                                <li><a href="#">PDF</a></li>
-                                <li><a href="#">JPG</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">All</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">EPUB</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">PDF</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">JPG</a></li>
                             </ul>
                         </div>
                         <div class="cates">
                             <p>Categories : </p>
                             <ul class="cates">
-                                <li><a href="#">Nonfiction</a></li>
-                                <li><a href="#">Fiction</a></li>
-                                <li><a href="#">Travel</a></li>
-                                <li><a href="#">Business / Economics</a></li>
-                                <li><a href="#">Romance</a></li>
-                                <li><a href="#">Thriller</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Nonfiction</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Fiction</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Travel</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Business / Economics</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Romance</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Thriller</a></li>
                             </ul>
                         </div>
                         <div class="publisher">
                             <p>Publishers : </p>
                             <ul class="publishers">
-                                <li><a href="#">Ages</a></li>
-                                <li><a href="#">Simon & Schuster</a></li>
-                                <li><a href="#">Hachette Livre</a></li>
-                                <li><a href="#">Oxford University</a></li>
-                                <li><a href="#">HarperCollins</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Ages</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Simon & Schuster</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Hachette Livre</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">Oxford University</a></li>
+                                <li><a href="javascript:window.location.reload()" class="aside_link">HarperCollins</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -142,86 +143,81 @@
                 <div class="col_10 books">
                     <div class="books">
                         <div class="row books">
-                            <h2 class="col_12 col_md_12 title_sub">
-                                Fiction
-                            </h2>
+                            <div class="row aside btn">
+                                <h2 class="col_8 col_md_12 title_sub">
+                                    Fiction
+                                </h2>
+                                <div class="col_4 aside btn">
+                                    <label for="asideBtn" class="aside_btn" value><img src="pics/icon/button/filter.png" alt=""></label>
+                                    <input type="button" class="aside_btn" id="asideBtn" >
+                                </div>
+                            </div>
                             <div class="row books_row" id="cate1Book">
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_grass.jpg" alt="product picture"></a>
-                                            <p class="book name">Remembering That Time When We Forgot</p>
-                                            <p class="book price">
-                                                $<span>3.55</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_grass.jpg" alt="product picture"></a>
+                                        <p class="book name">Remembering That Time When We Forgot</p>
+                                        <p class="book price">
+                                            $<span>3.55</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_woman.jpg" alt="product picture"></a>
-                                            <p class="book name">The Three Month Rule</p>
-                                            <p class="book price">
-                                                $<span>10</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_woman.jpg" alt="product picture"></a>
+                                        <p class="book name">The Three Month Rule</p>
+                                        <p class="book price">
+                                            $<span>10</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product">
-                                                <div class="tag">6.0 <br> ★</div>
-                                                <img src="pics/product/book/book_never_have.jpg" alt="product picture">
-                                            </a>
-                                            <p class="book name">Every Thing You Never Had</p>
-                                            <p class="book price">
-                                                $<span>3.55</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product">
+                                            <img src="pics/product/book/book_never_have.jpg" alt="product picture">
+                                        </a>
+                                        <p class="book name">Every Thing You Never Had</p>
+                                        <p class="book price">
+                                            $<span>3.55</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_marriage_war.jpg" alt="product picture"></a>
-                                            <p class="book name">A Story of Marriage and War </p>
-                                            <p class="book price">
-                                                $<span>8.4</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_marriage_war.jpg" alt="product picture"></a>
+                                        <p class="book name">A Story of Marriage and War </p>
+                                        <p class="book price">
+                                            $<span>8.4</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_shore_break.jpg" alt="product picture"></a>
-                                            <p class="book name">Shore Breaks at Beechtown</p>
-                                            <p class="book price">
-                                                $<span>9.7</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_shore_break.jpg" alt="product picture"></a>
+                                        <p class="book name">Shore Breaks at Beechtown</p>
+                                        <p class="book price">
+                                            $<span>9.7</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -237,82 +233,71 @@
                             <div class="row books_row" id="cate2Book">
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_happy_lemon.jpg" alt="product picture"></a>
-                                            <p class="book name">Happy Lemon</p>
-                                            <p class="book price">
-                                                $<span>2.3</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_happy_lemon.jpg" alt="product picture"></a>
+                                        <p class="book name">Happy Lemon</p>
+                                        <p class="book price">
+                                            $<span>2.3</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_outside_the_box.jpg" alt="product picture"></a>
-                                            <p class="book name">Think Outside The Box</p>
-                                            <p class="book price">
-                                                $<span>10.99</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_outside_the_box.jpg" alt="product picture"></a>
+                                        <p class="book name">Think Outside The Box</p>
+                                        <p class="book price">
+                                            $<span>10.99</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product">
-                                                <img src="pics/product/book/book_yellow_tower.jpg" alt="product picture">
-                                            </a>
-                                            <p class="book name">Life to The Top</p>
-                                            <p class="book price">
-                                                $<span>0.89</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product">
+                                            <img src="pics/product/book/book_yellow_tower.jpg" alt="product picture">
+                                        </a>
+                                        <p class="book name">Life to The Top</p>
+                                        <p class="book price">
+                                            $<span>0.89</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_black_photo.jpg" alt="product picture"></a>
-                                            <p class="book name">The Open Seasons</p>
-                                            <p class="book price">
-                                                $<span>7.77</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_black_photo.jpg" alt="product picture"></a>
+                                        <p class="book name">The Open Seasons</p>
+                                        <p class="book price">
+                                            $<span>7.77</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product">
-                                                <div class="tag">5.9 <br> ★</div>
-                                                <img src="pics/product/book/book_monster.jpg" alt="product picture">
-                                            </a>
-                                            <p class="book name">Illustrating Monster</p>
-                                            <p class="book price">
-                                                $<span>12.2</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product">
+                                            <img src="pics/product/book/book_monster.jpg" alt="product picture">
+                                        </a>
+                                        <p class="book name">Illustrating Monster</p>
+                                        <p class="book price">
+                                            $<span>12.2</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -328,80 +313,69 @@
                             <div class="row books_row" id="cate3Book">
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_moon.jpg" alt="product picture"></a>
-                                            <p class="book name">Breaking</p>
-                                            <p class="book price">
-                                                $<span>1.1</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_moon.jpg" alt="product picture"></a>
+                                        <p class="book name">Breaking</p>
+                                        <p class="book price">
+                                            $<span>1.1</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_lost.jpg" alt="product picture"></a>
-                                            <p class="book name">Lost</p>
-                                            <p class="book price">
-                                                $<span>4.99</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_lost.jpg" alt="product picture"></a>
+                                        <p class="book name">Lost</p>
+                                        <p class="book price">
+                                            $<span>4.99</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product">
-                                                <div class="tag">5.7 <br> ★</div>
-                                                <img src="pics/product/book/book_journey_star.jpg" alt="product picture">
-                                            </a>
-                                            <p class="book name">Journey to the Star</p>
-                                            <p class="book price">
-                                                $<span>99</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product">
+                                            <img src="pics/product/book/book_journey_star.jpg" alt="product picture">
+                                        </a>
+                                        <p class="book name">Journey to the Star</p>
+                                        <p class="book price">
+                                            $<span>99</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_death.jpg" alt="product picture"></a>
-                                            <p class="book name">Death od Ever and Ever</p>
-                                            <p class="book price">
-                                                $<span>88</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_death.jpg" alt="product picture"></a>
+                                        <p class="book name">Death of Ever and Ever</p>
+                                        <p class="book price">
+                                            $<span>88</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col_12 col_md_2 book">
                                     <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_serect.jpg" alt="product picture"></a>
-                                            <p class="book name">Serects</p>
-                                            <p class="book price">
-                                                $<span>50</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
+                                        <a href="link_product" class="link product"><img src="pics/product/book/book_serect.jpg" alt="product picture"></a>
+                                        <p class="book name">Serects</p>
+                                        <p class="book price">
+                                            $<span>50</span>
+                                        </p>
+                                        <a href="link_shop_bag" class="link shop_bag">
+                                            <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
+                                            <input type="button" class="books_btn_shop_bag" >
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -529,35 +503,3 @@
 
 
 
-
-
-<!-- <div class="col_12 col_md_2 book">
-                                    <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_brain.jpg" alt="product picture"></a>
-                                            <p class="book name">The Lives Inside Your Head</p>
-                                            <p class="book price">
-                                                $<span>4.85</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> -->
-<!-- <div class="col_12 col_md_2 book">
-                                    <div class="book">
-                                        <div class="book pic">
-                                            <a href="link_product" class="link product"><img src="pics/product/book/book_brain.jpg" alt="product picture"></a>
-                                            <p class="book name">The Lives Inside Your Head</p>
-                                            <p class="book price">
-                                                $<span>4.85</span>
-                                            </p>
-                                            <a href="link_shop_bag" class="link shop_bag">
-                                                <label for="books_btn_shop_bag" class="btn_shop_bag" value>Buy</label>
-                                                <input type="button" class="books_btn_shop_bag" >
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div> -->

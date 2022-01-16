@@ -1,0 +1,211 @@
+/* header */
+.menu .sales a::after{
+content:'';
+border-bottom: 2px solid var(--maincolor);
+width: 100%;
+}
+/* discunt */
+.full.discunt_item{
+    padding-top: 70px;
+}
+.link.product{
+    margin: auto;
+}
+.discunt_item .main.long, .short.up, .short.down, .discunt_item.sub.item{
+    background-color: #fff;
+}
+.col_12.col_md_4.discunt_item.main{
+    text-align: center;
+    border: 1px solid var(--fontcolor);
+    padding: 20px;
+    display: block;
+}
+.discunt_item.main.short{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.row.discunt_item{
+    padding: 10px;
+    padding-bottom: 0;
+}
+.row.short{
+    padding: 20px;
+    border: 1px solid var(--fontcolor);
+    height: 100%;
+}
+.row.short.up{
+    margin-bottom: 10px;
+}
+.book.name{
+    display: inline-block;
+    height: 100%;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.txt{
+    width: 70%;
+    flex-grow: 1;
+    padding-top: 20px;
+    margin: auto;
+}
+.book.intro{
+    text-align: left;
+    padding: 10px;
+}
+.row.discunt_items.sub{
+    padding: 10px;
+    padding-top: 0;
+}
+.row.discunt_item.sub{
+    display: block;
+    justify-content: space-between;
+}
+.discunt_item.sub .item{
+    border: 1px solid var(--fontcolor);
+    padding: 20px;
+}
+.book.name.sub{
+    margin: auto;
+}
+.book.pic{
+    display: flex;
+    justify-content: center;
+}
+
+/* 75% */
+.discunt_item .title_tag{
+    font-family: baskerville old face;
+    font-size: 128px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+/* 50% */
+.fifty.discunt_item .title_tag{
+    justify-content: right;
+}
+
+.fifty .discunt_item.main.short{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 0;
+}
+/* cate */
+.col_6.col_md_3.cates{
+    padding: 10px;
+}
+.cate_title .title_tag{
+    line-height: 2rem;
+    padding: 35% 0;
+    font-size: 28px;
+    line-height: 2rem;
+    color: #fff;
+    border-radius: 50%;
+    background-color: var(--subcolordark);
+    justify-content: center;
+}
+.cate.title{
+    font-size: 20px;
+    font-family: 'Yu Gothic';
+    padding: 20px;
+    color: #fff;
+    background-color: var(--subcolordark);
+}
+.cate .link.product{
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    /* discunt */
+    .discunt_item .title_tag{
+        font-size: 4rem;
+    }
+    .discunt_item.main.short{
+        padding: 0;
+    }
+    .txt{
+        width: 100%;
+    }
+    .book.pic{
+        display: flex;
+        justify-content: center;
+    }
+    .book.name{
+        width: 100%;
+    }
+    .book.name.sub{
+        padding-top: 20px;
+    }
+    .discunt_item.main.long .book.pic{
+        display: flex;
+    }
+    .row.short.up{
+        justify-content: center;
+    }
+    .row.short.down{
+        flex-direction: column-reverse;
+    }
+    .row.short.down .txt{
+        margin: 0;
+    }
+    .row.short.down .book.name{
+        height: 0;
+    }
+    .discunt_item.main.long .link.product{
+        margin: 0;
+    }
+    .seventyfive .discunt_item.main.long{
+        margin-bottom: 10px;
+    }
+    .fifty .discunt_item.main.long{
+        margin-top: 10px;
+    }
+    .discunt_item.sub.item{
+        margin-bottom: 10px;
+    }
+    .fifty.row.short.short.down{
+        margin-bottom: 10px;
+    }
+    .discunt_item.sub:nth-child(2) .book.pic{
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (min-width: 768px) {
+    /* discunt */
+    .row.discunt_items.sub{
+        padding-right: 20px;
+    }
+    .row.discunt_item.sub{
+        display: flex;
+        justify-content: space-between;
+    }
+    .discunt_item.sub .item{
+        border: 1px solid var(--fontcolor);
+        width: calc(50% - 5px);
+    }
+    .book.name.sub{
+        margin: auto;
+    }
+    .col_12.col_md_4.discunt_item.main .book.pic{  
+        flex-grow: 1;
+        justify-content: center;
+    }
+    /* 50% */
+    .fifty.discunt_item .title_tag{
+        justify-content: right;
+    }
+    .fifty .row.discunt_item.main{
+        padding-right: 20px;
+    }
+    .fifty .discunt_item.main.short{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    
+}
+

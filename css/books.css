@@ -1,29 +1,35 @@
+/* header */
+#booksLink::after {
+    content:'';
+    border-bottom: 2px solid var(--subcolordark);
+    width: 100%;
+}
 /* aside */
+.aside_btn{
+    display: none;
+}
 .container.aside.books{
     padding: 0;
 }
-/* title */
-.col_12.col_md_12.title{
-    position: relative;
+.col_md_2.aside{
+    padding-right: 30px;
 }
-.col_12.col_md_12.title::after{
-    content: '';
-    position: absolute;
-    background-image: url("/pics/background/bg_title_underline.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: .8;
-    top: 20px;
-    left: -20px;
-    width: 100%;
-    height: 30px;
+.col_md_2.aside .aside{
+    background-color: var(--subbgcolor);
+    padding: 20px;
+    border-radius: 25px;
 }
-.col_12.col_md_12.title_sub{
+.col_md_2.aside p{
     color: var(--maincolor);
     font-weight: 600;
+    border-bottom: 1px solid var(--fontcolor);
+    padding: 20px 0;
 }
-.col_12.col_md_12.title_sub:nth-child(2n){
-    color: var(--subcolordark);
+.col_md_2.aside a{
+    padding: 10px 0;
+}
+.col_12.col_md_2.book{
+    padding: 20px 0;
 }
 /* 商品區 */
 .col_12.col_md_2.book{
@@ -31,74 +37,6 @@
 }
 .col_10.books{
     flex-grow: 1;
-}
-/* 商品圖片 */
-.link.product{
-    width: 120px;
-    position: relative;
-}
-.tag{
-    max-width: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 18px;
-    position: absolute;
-    color: #fff;
-    bottom: 80%;
-    right: 2%;
-    background-color: var(--tagcolor);
-    padding: 8px;
-    text-align: center;
-}
-.tag::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 98%;
-    width: 0;
-    border-left: 20px solid var(--tagcolor);
-    border-right: 20px solid var(--tagcolor);
-    border-bottom: 15px solid transparent;
-}
-.link.product img{
-    width: 100%;
-    box-shadow: 0px 0px 3px var(--fontcolor);
-}
-/* 商品資訊 */
-.book.name{
-    padding: 5px;
-    width: 20vw;
-    align-items: center;
-    height: 150px;
-    font-weight: 600;
-    text-align: left;
-}
-.book.price{
-    display: block;
-    padding: 0px 5px;
-}
-.book.price span{
-    color: var(--subcolordark);
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-/* 商品 購物袋 按鈕 */
-.link.shop_bag{
-    display: flex;
-    justify-content: center;
-}
-.btn_shop_bag{
-    color: #fff;
-    padding: 15px;
-    display: block;
-    background-color: var(--subcolordark);
-    border-radius: 25px;
-    text-align: center;
-    margin: auto;
-}
-.btn_shop_bag:hover{
-    background-color: var(--maincolor);
-    transition: .5s;
 }
 /* 商品 more 按鈕 */
 .close_more.btn{
@@ -129,85 +67,76 @@
     padding: 20px 0;
     justify-content: space-between;
 }
-/* .row.close.books.on{
-    position: relative;
-    opacity: 1;
-    transition: 3s;
-} */
-.row.close.books{
-    padding: 20px 0;
-    justify-content: space-between;
-    position: absolute;
-    top: -100%;
-    opacity: 0;
-}
-.row.close.books{
-    left: 0;
-}
 /* 手機 */
 @media screen and (max-width: 767px) {
+    /* sub_title */
+    .title_sub, .aside.btn{
+        padding: 20px 0;
+    }
     /* aside */
-    .col_md_2.aside{
-        display: none;
+    .aside.filter{
+        position: absolute;
+        transform: translateX(-150%);
+        z-index: 1;
+        transition: .5s;
     }
-    /* 商品區 */
-    /* .col_12.col_md_12.title{
-        padding-bottom: 40px;
-    } */
-    .col_12.col_md_2.book .book{
-        display: flex;
+    .aside.filter.on{
+        transform: translateX(0%);
+        transition: .5s;
     }
-    .col_12.col_md_2.book .book{
-        flex-grow: 1;
+    .aside_btn{
+        color: #fff;
+        padding: 12px 0 8px 0;
+        display: block;
+        background-color: var(--subbgcolor);
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+        transition: .5s;
+        width: 45%;
         margin: auto;
     }
-    .tag{
-        bottom: 75%;
+    .aside_btn img{
+        width: 20px;
+    }
+    .link.product{
+        width: 200px;
+    }
+    .col_12.col_md_2.book .book{
+        margin: auto;
+        text-align: center;
     }
     .book.name{
-        overflow: scroll;
+        width: 100%;
+        font-size: 8vw;
+        line-height: 2rem;
+        padding: 40px;
+    }
+    .book.price, .book.price span{
+        padding: 20px 0;
+        font-size: 10vw;
+    }
+    .link.shop_bag{
+        padding: 20px 0;
     }
 }
 
 /* 桌機 */
 @media screen and (min-width: 768px) {
-    /* aside */
-    .col_md_2.aside{
-        padding-right: 30px;
-    }
-    .col_md_2.aside .aside{
-        background-color: var(--subbgcolor);
-        padding: 20px;
-        border-radius: 25px;
-    }
-    .col_md_2.aside p{
-        color: var(--maincolor);
-        font-weight: 600;
-        border-bottom: 1px solid var(--fontcolor);
-        padding: 20px 0;
-    }
-    .col_md_2.aside a{
-        padding: 10px 0;
-    }
-    .col_12.col_md_2.book{
-        padding: 20px 0;
-    }
     /* 商品圖片 */
     .link.product{
-        width: 180px;
+        width: 100%;
     }
     /* 商品資訊 */
     .book.name{
         display: block;
         padding: 20px 0px;
         width: 100%;
+        height: 150px;
         text-align: left;
     }
     .book.price{
         padding: 20px;
         text-align: center;
-    }
-    .btn_shop_bag{
-        padding: 20px 40px;
     }
 }

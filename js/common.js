@@ -22,6 +22,21 @@ $('#burgerBtns').click(function(){
 //common end
 
 //Books start
+
+// Books aside btn
+
+$('#asideBtn').click(function(){
+    console.log("asideBtnOn click");
+    $('.aside.filter').toggleClass('on');
+});
+
+$('.aside_link').click(function(){
+    $('.aside.filter').toggleClass('on');
+});
+
+
+
+
 // Books 產品 more 顯示(複製)
 let i = 1;
 $('#booksBtnCloseMoreCate1').click(function(){

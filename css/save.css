@@ -983,4 +983,34 @@ input[type="button"]{
     //         backgroundColor: '#2ebce',
     //     },2000, 'easeInshine');
     // })
+
+
+
+
+
+
+    
+.tag{
+    max-width: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    position: absolute;
+    color: #fff;
+    bottom: 80%;
+    right: 2%;
+    background-color: var(--tagcolor);
+    padding: 8px;
+    text-align: center;
+}
+.tag::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 98%;
+    width: 0;
+    border-left: 20px solid var(--tagcolor);
+    border-right: 20px solid var(--tagcolor);
+    border-bottom: 15px solid transparent;
+}
     

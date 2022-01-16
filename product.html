@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Read | Sales</title>
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/product.css">
+
+    <script type="text/javascript" src="js/jquery.js" defer></script>
+    <script type="text/javascript" src="js/jquery-ui.js" defer></script>
+    <script type="text/javascript" src="js/common.js" defer></script> 
+    <script type="text/javascript" src="js/index.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+    <header class="full header">
+        <div class="container header">
+            <div class="row header">
+                <div class="col_12 col_md_12 header">
+                    <div class="logo">
+                        <a href="link_home"><img src="pics/logo/logo_day_read.png" alt="logo" class="img_logo"></a>
+                    </div>
+                    <nav class="nav">
+                        <div class="menu">
+                            <ul class="drop_menu books">
+                                <li>
+                                    <a href="link_books" id="booksLink">Books</a>
+                                    
+                                    <ul class="first_layer">
+                                            <li class="ebook"><a href="javascript:void(0)">Ebook</a></li>
+                                            <li class="magazine"><a href="javascript:void(0)">Magazine</a></li>
+                                            <li class="soundbook"><a href="javascript:void(0)">Soundbook</a></li>
+                                            <li class="subscribe"><a href="javascript:void(0)">Subscribe</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="sales">
+                                <a href="link_sales">Sales</a>
+                            </div>
+                            <ul class="drop_menu bestsellers">
+                                <li>
+                                    <a href="link_best_sellers" id="bestSellersLink">Bestsellers</a>
+
+                                    <ul class="first_layer">
+                                        <li class="hot_sale"><a href="">Hot Sale</a></li>
+                                        <li class="pal_sale"><a href="">Recommended</a></li>
+                                        <li class="new_sale"><a href="">New Arrival</a></li>
+                                        <li class="serie_sale"><a href="">Series</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="columns">
+                                <a href="link_columns">Columns</a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <label for="searchShowNav" class="search_show"><img class="img_search magnifer" src="pics/icon/button/search_maincolor.png" alt="search show"></label>
+                                <input type="button" id="searchShowNav" class="search_show_btn">
+                            <div class="search_bar">
+                                <div class="search_bar_cancel">
+                                    <label for="searchBarNav"></label>
+                                    <input type="search" id="searchBarNav" class="search_type" placeholder="Search by Title, Author or ISBN">
+                                    <label for="searchCancelNav" class="search_cancel"><img class="img_search cancel" src="pics/icon/button/cross_maincolor.png" alt="cancel"></label>
+                                    <input type="button" id="searchCancelNav" class="search_cancel_btn"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav_btns">
+                            <a href="link_shopping_bag" class="shopping_bag">
+                                <img src="pics/icon/button/shopping_bag_subcolordark.png" alt="" class="img_btn">
+                            </a>
+                            <a href="link_personal_study" class="personalstudy">
+                                <img src="pics/icon/button/personal_study_maincolor.png" alt="personal_study_btn" class="img_btn">
+                            </a>
+                        </div>
+                        <div class="menu_btn" id="burgerBtns">
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                            <sapn class="burger" id="burgerClick"></sapn>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="full main_product">
+        <div class="container">
+            <div class="product_pic">
+                <div class="pic">
+                    <img src="pics/product/book/book_365days.jpg" alt="">
+                </div>
+                <button>Trial</button>
+            </div>
+            <div class="des">
+                <div class="name">
+                    <h1 class="book_name">365 Days of Self-Love</h1>
+                </div>
+                <div class="author">
+                    <p>
+                        by <a href="#">Dabby Lord</a>
+                    </p>  
+                </div>
+                <div class="rating">
+                    <p>Rating: <span>★★★★★</span></p>
+                </div>
+                <div class="brief_des">
+                    <p>
+                        ASIN  :  B033RH0GT4
+                        <br>
+                        Publisher  :  Jude
+                        <br>
+                        Reprint edition (June 12, 3347)
+                        <br>
+                        Publication date  : June 12, 2347
+                        <br>
+                        Language  :  English
+                        <br>
+                        File size  :  200 KB
+                        <br>
+                        Text-to-Speech  : Enabled
+                        <br>
+                        Word Wise : Enabled
+                        <br>
+                        Print length: 458 pages
+                    </p>
+                    
+                </div>
+                <div class="cate_prices">
+                    <button class="ebook">Ebook <span>$11.5</span></button>
+                    <button class="audio_book">Audio Book <span>$13.5</span></button>
+                    <button class="subscribe">Subscribe <span>$5 </span></button>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="buy">Buy</button>
+                <a href="https://lltriangle.github.io/day_read/day_read_shop_bag.html"><button class="shop_bag">Add to Shop Bag</button></a>
+                <button class="present">Present</button>
+            </div>
+        </div>
+        
+    </section>
+    <section class=" full product_info_form">
+        <div class="container">
+            <div class="detail_panel_group">
+                <input type="radio" name="product_detail"  class="panel_control" id="intro" checked>
+                
+                <input type="radio"  name="product_detail" class="panel_control" id="author_info">
+                
+                <input type="radio" name="product_detail"  class="panel_control" id="contents">
+
+                <div class="tab_group">
+                    <label for="intro">Introduction</label>
+                    <label for="author_info">About the author</label>
+                    <label for="contents">Contents</label>
+                </div>
+                <div class="content_group">
+                    <div class="content intro">
+                        <p>
+                            #1 NEW YORK TIMES BESTSELLER • Diana Gabaldon returns with the newest novel in the epic Outlander series.
+                            <br>
+                            The past may seem the safest place to be . . . but it is the most dangerous time to be alive. . . .
+                            <br>
+                            Jamie Fraser and Claire Randall were torn apart by the Jacobite Rising in 1746, and it took them twenty years to find each other again. Now the American Revolution threatens to do the same.
+                            <br>
+                            It is 1779 and Claire and Jamie are at last reunited with their daughter, Brianna, her husband, Roger, and their children on Fraser’s Ridge. Having the family together is a dream the Frasers had thought impossible.
+                            <br>
+                            Yet even in the North Carolina backcountry, the effects of war are being felt. Tensions in the Colonies are great and local feelings run hot enough to boil Hell’s teakettle. Jamie knows loyalties among his tenants are split and it won’t be long until the war is on his doorstep.
+                            <br>
+                            Brianna and Roger have their own worry: that the dangers that provoked their escape from the twentieth century might catch up to them. Sometimes they question whether risking the perils of the 1700s—among them disease, starvation, and an impending war—was indeed the safer choice for their family.
+                            <br>
+                            Not so far away, young William Ransom is still coming to terms with the discovery of his true father’s identity—and thus his own—and Lord John Grey has reconciliations to make, and dangers to meet . . . on his son’s behalf, and his own.
+                            <br>
+                            Meanwhile, the Revolutionary War creeps ever closer to Fraser’s Ridge. And with the family finally together, Jamie and Claire have more at stake than ever before.
+                        </p>
+                    </div>
+                    <div class="content author_info">
+                        <p>Dabby Lord</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eo</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur a voluptas illum repellat adipisci incidunt.</p>
+                    </div>
+                    <div class="content contents">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, atque?</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eo</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eos illum repellat adipisci incidunt.s illum repellat adipisci incidunt.s illum repellat adipisci incidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="full review_and_recom">
+        <div class="container">
+            <div class="review">
+                <div class="comment">
+                    <p class="title">Discussions</p>
+                    <div class="comments">
+                        <div class="item">
+                            <div class="profile">
+                                <img src="img/comment/comment_people_profile.png" alt="">
+                                <div class="id">
+                                    <p>Taking the Hobbits</p>
+                                </div>
+                            </div>
+                            <div class="txt"><p>111Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
+                        </div>
+                        <div class="item">
+                            <div class="profile">
+                                <img src="img/comment/comment_people_profile.png" alt="">
+                                <div class="id">
+                                    <p>Taking the Hobbits</p>
+                                </div>
+                            </div>
+                            <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, doldolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugia</p></div>
+                        </div>
+                        <div class="item">
+                            <div class="profile">
+                                <img src="img/comment/comment_people_profile.png" alt="">
+                                <div class="id">
+                                    <p>Taking the Hobbits</p>
+                                </div>
+                            </div>
+                            <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiat quidem dicta quibusdadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiam placeat, nam hic laborum?</p></div>
+                        </div>
+                        <div class="item">
+                            <div class="profile">
+                                <img src="img/comment/comment_people_profile.png" alt="">
+                                <div class="id">
+                                    <p>Taking the Hobbits</p>
+                                </div>
+                            </div>
+                            <div class="txt"><p>Lorem ipsum dolor sit, amet consecteturdolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
+                        </div>
+                        <div class="item">
+                            <div class="profile">
+                                <img src="img/comment/comment_people_profile.png" alt="">
+                                <div class="id">
+                                    <p>Taking the Hobbits</p>
+                                </div>
+                            </div>
+                            <div class="txt">Lorem ipsum dolor sit, amet consectetur aduibusdam placeat, nam hic laborum?laceat, nam hic laborum?laceat, nam hic laborum?</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recom">
+                <p class="caption">Others also bought...</p>
+                <div class="item">
+                    <div class="recom_product_pic">
+                        <div class="pic">
+                            <img src="img/product/book/book_wise_choice.jpg" alt="">
+                        </div>
+                        <div class="title">
+                            <p>Wise Choices</p>
+                        </div>
+                        <p> <span>$11.5</span></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="recom_product_pic">
+                        <div class="pic">
+                            <img src="img/product/book/book_yellow_towe.jpg" alt="">
+                        </div>
+                        <div class="title">
+                            <p>Life To The Top</p>
+                        </div>
+                        <p> <span>$11.5</span></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="recom_product_pic">
+                        <div class="pic">
+                            <img src="img/product/book/book_manage_energy.jpg" alt="">
+                        </div>
+                        <div class="title">
+                            <p>How To Manage Your Energy</p>
+                        </div>
+                        <p> <span>$11.5</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="full footer">
+        <section class="container footer ">
+            <div class="row footer up">
+                <div class="col_12 col_md_12 footer up">
+                    <div class="row row_cols_lg_5">
+                        <div class="col_6 cate service">
+                            <h4 class="title service">Member
+                            </h4>
+                            <div class="web_map">
+                                <a href="javascript:void(0)">Web Map</a>
+                            </div>
+                            <div class="qa">
+                                <a href="javascript:void(0)">Q&A</a>
+                            </div>
+                            <div class="policy">
+                                <a href="javascript:void(0)">Policy</a>
+                            </div>
+                            <div class="feedback">
+                                <a href="javascript:void(0)">Feedback</a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate about">
+                            <h4 class="title_about">About Day Read</h4>
+                            <div class="our_story">
+                                <a href="">Our Story</a>
+                            </div>
+                            <div class="yearly_plan">
+                                <a href="">Yearly Plan</a>
+                            </div>
+                            <div class="discunt_itemation">
+                                <a href="">Cooperation Program</a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate contact">
+                            <h4 class="title contact">Contact Us</h4>
+                            <div class="online_service">
+                                <a href="javascript:void(0)">Online Service</a>
+                            </div>
+                            <div class="ai_assistant">
+                                <a href="javascript:void(0)">Ai Assistant</a>
+                            </div>
+                            <span class="phone">Phone:</span>
+                            <br>
+                            <span class="phone_number">02-95274616</span>
+                        </div>
+                        <div class="col_6 cate app">
+                            <h4 class="title application">Application</h4>
+                            <div class="app_google">
+                                <a href="javascript:void(0)" class="google_play">
+                                    <img src="pics/icon/footer/googleplay_subcolordark.png" alt="google_play">
+                                </a>
+                            </div>
+                            <div class="app_apple">
+                                <a href="javascript:void(0)" class="apple_store">
+                                    <img src="pics/icon/footer/appstore_maincolor.png" alt="apple_store">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col_6 cate social_media">
+                            <h4 class="title social_media">Social Media</h4>
+                            <div class="soicalmedia_up">
+                                <a href="javascript:void(0)" class="facebook">
+                                    <img src="pics/icon/footer/facebook_subcolordark.png" alt="facebook">
+                                </a>
+                                <a href="javascript:void(0)" class="instagram">
+                                    <img src="pics/icon/footer/instagram_maincolor.png" alt="instagram">
+                                </a>
+                                <a href="javascript:void(0)" class="line">
+                                    <img src="pics/icon/footer/line_subcolordark.png" alt="line">
+                                </a>
+                            </div>
+                            <div class="soicalmedia_down">
+                                <a href="javascript:void(0)" class="link twitter">
+                                    <img src="pics/icon/footer/twitter_maincolor.png" alt="twitter">
+                                </a>
+                                <a href="javascript:void(0)" class="link youtube">
+                                    <img src="pics/icon/footer/youtube_subcolordark.png" alt="youtube">
+                                </a>
+                                <a href="javascript:void(0)" class="link twitch">
+                                    <img src="pics/icon/footer/twitch_maincolor.png" alt="twitch">
+                                </a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer down">
+                <div class="col_12 col_md_12 footer down">
+                    <span class="copy_right">
+                        本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊<a href="https://www.tibame.com/">「TibaMe-前端設計工程師養成班」</a>，後續會由專人協助處理。
+                        <br>
+                        <br>
+                        Copyright © 2021, DayRead EBook, Inc.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
