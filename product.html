@@ -26,7 +26,7 @@
                         <a href="link_home"><img src="pics/logo/logo_day_read.png" alt="logo" class="img_logo"></a>
                     </div>
                     <nav class="nav">
-                        <div class="menu">
+                        <div class="menu scroll_style">
                             <ul class="drop_menu books">
                                 <li>
                                     <a href="link_books" id="booksLink">Books</a>
@@ -92,57 +92,74 @@
     </header>
 
     <section class="full main_product">
-        <div class="container">
-            <div class="product_pic">
-                <div class="pic">
-                    <img src="pics/product/book/book_365days.jpg" alt="">
-                </div>
-                <button>Trial</button>
+        <div class="container main_product">
+            <div class="breadcrumb">
+                <a href="link_books">Books</a>
+                /
+                <a href="link_books">Literature</a>
+                /
+                <a href="link_books">Novel</a>
             </div>
-            <div class="des">
-                <div class="name">
-                    <h1 class="book_name">365 Days of Self-Love</h1>
+            <div class="row main_product">
+                <div class="col_12 col_md_4 product_pic">
+                    <div class="pic">
+                        <img src="pics/product/book/book_365days.jpg" alt="">
+                    </div>
+                    <div href="link_trial" class="link trial">
+                        <label for="books_btn_trial" class="btn_trial" value>Trial</label>
+                        <input type="button" class="books_btn_trial" >
+                    </div>
                 </div>
-                <div class="author">
-                    <p>
-                        by <a href="#">Dabby Lord</a>
-                    </p>  
+                <div class="col_12 col_md_6 des">
+                    <div class="name">
+                        <h1 class="book_name">365 Days of Self-Love</h1>
+                    </div>
+                    <div class="author">
+                        <p>
+                            by <a href="#">Dabby Lord</a>
+                        </p>
+                    </div>
+                    <div class="rating">
+                        <p>Rating: <span>★★★★★</span></p>
+                    </div>
+                    <div class="brief_des">
+                        <p>
+                            ASIN  :  B033RH0GT4
+                            <br>
+                            Publisher  :  Jude
+                            <br>
+                            Reprint edition (June 12, 3347)
+                            <br>
+                            Publication date  : June 12, 2347
+                            <br>
+                            Language  :  English
+                            <br>
+                            File size  :  200 KB
+                            <br>
+                            Text-to-Speech  : Enabled
+                            <br>
+                            Word Wise : Enabled
+                            <br>
+                            Print length: 458 pages
+                        </p>
+                
+                    </div>
+                    <div class="cate_prices">
+                        <button class="price_fisrt_btn ebook">Ebook <br> $11.5</button>
+                        <button class="price_fisrt_btn audiobook">Audio Book <br> $13.5</button>
+                        <button class="price_fisrt_btn susbscribe">Subscribe <br> $5 </button>
+                    </div>
                 </div>
-                <div class="rating">
-                    <p>Rating: <span>★★★★★</span></p>
-                </div>
-                <div class="brief_des">
-                    <p>
-                        ASIN  :  B033RH0GT4
-                        <br>
-                        Publisher  :  Jude
-                        <br>
-                        Reprint edition (June 12, 3347)
-                        <br>
-                        Publication date  : June 12, 2347
-                        <br>
-                        Language  :  English
-                        <br>
-                        File size  :  200 KB
-                        <br>
-                        Text-to-Speech  : Enabled
-                        <br>
-                        Word Wise : Enabled
-                        <br>
-                        Print length: 458 pages
-                    </p>
+                <div class="col_12 col_md_2 btns">
+                    <label for="afterPriceBuy" class="second_btn buy">Buy</label>
+                    <input type="button" id="afterPriceBuy">
                     
+                    <label for="afterShopBag" class="second_btn shop_bag">Add to Shop Bag</label>
+                    <input type="button" id="afterShopBag">
+
+                    <label for="afterPricePresent" class="second_btn present">Present</label>
+                    <input type="button" id="afterPricePresent">
                 </div>
-                <div class="cate_prices">
-                    <button class="ebook">Ebook <span>$11.5</span></button>
-                    <button class="audio_book">Audio Book <span>$13.5</span></button>
-                    <button class="subscribe">Subscribe <span>$5 </span></button>
-                </div>
-            </div>
-            <div class="btns">
-                <button class="buy">Buy</button>
-                <a href="https://lltriangle.github.io/day_read/day_read_shop_bag.html"><button class="shop_bag">Add to Shop Bag</button></a>
-                <button class="present">Present</button>
             </div>
         </div>
         
@@ -157,42 +174,50 @@
                 <input type="radio" name="product_detail"  class="panel_control" id="contents">
 
                 <div class="tab_group">
-                    <label for="intro">Introduction</label>
-                    <label for="author_info">About the author</label>
+                    <label for="intro">Details</label>
+                    <label for="author_info">Author</label>
                     <label for="contents">Contents</label>
                 </div>
-                <div class="content_group">
+                <div class="content_group scroll_style" id="scroll_style">
                     <div class="content intro">
-                        <p>
-                            #1 NEW YORK TIMES BESTSELLER • Diana Gabaldon returns with the newest novel in the epic Outlander series.
+                            <p>#1 NEW YORK TIMES BESTSELLER • Diana Gabaldon returns with the newest novel in the epic Outlander series.</p>
                             <br>
-                            The past may seem the safest place to be . . . but it is the most dangerous time to be alive. . . .
+                            <p>The past may seem the safest place to be . . . but it is the most dangerous time to be alive. . . .</p>
                             <br>
-                            Jamie Fraser and Claire Randall were torn apart by the Jacobite Rising in 1746, and it took them twenty years to find each other again. Now the American Revolution threatens to do the same.
                             <br>
-                            It is 1779 and Claire and Jamie are at last reunited with their daughter, Brianna, her husband, Roger, and their children on Fraser’s Ridge. Having the family together is a dream the Frasers had thought impossible.
+                            <p>Jamie Fraser and Claire Randall were torn apart by the Jacobite Rising in 1746, and it took them twenty years to find each other again. Now the American Revolution threatens to do the same.</p>
                             <br>
-                            Yet even in the North Carolina backcountry, the effects of war are being felt. Tensions in the Colonies are great and local feelings run hot enough to boil Hell’s teakettle. Jamie knows loyalties among his tenants are split and it won’t be long until the war is on his doorstep.
                             <br>
-                            Brianna and Roger have their own worry: that the dangers that provoked their escape from the twentieth century might catch up to them. Sometimes they question whether risking the perils of the 1700s—among them disease, starvation, and an impending war—was indeed the safer choice for their family.
+                            <p>It is 1779 and Claire and Jamie are at last reunited with their daughter, Brianna, her husband, Roger, and their children on Fraser’s Ridge. Having the family together is a dream the Frasers had thought impossible.</p>
                             <br>
-                            Not so far away, young William Ransom is still coming to terms with the discovery of his true father’s identity—and thus his own—and Lord John Grey has reconciliations to make, and dangers to meet . . . on his son’s behalf, and his own.
                             <br>
-                            Meanwhile, the Revolutionary War creeps ever closer to Fraser’s Ridge. And with the family finally together, Jamie and Claire have more at stake than ever before.
-                        </p>
+                            <p>Yet even in the North Carolina backcountry, the effects of war are being felt. Tensions in the Colonies are great and local feelings run hot enough to boil Hell’s teakettle. Jamie knows loyalties among his tenants are split and it won’t be long until the war is on his doorstep.</p>
+                            <br>
+                            <br>
+                            <p>Brianna and Roger have their own worry: that the dangers that provoked their escape from the twentieth century might catch up to them. Sometimes they question whether risking the perils of the 1700s—among them disease, starvation, and an impending war—was indeed the safer choice for their family.</p>
+                            <br>
+                            <br>
+                            <p>Not so far away, young William Ransom is still coming to terms with the discovery of his true father’s identity—and thus his own—and Lord John Grey has reconciliations to make, and dangers to meet . . . on his son’s behalf, and his own</p>.
+                            <br>
+                            <br>
+                            <p>Meanwhile, the Revolutionary War creeps ever closer to Fraser’s Ridge. And with the family finally together, Jamie and Claire have more at stake than ever before.</p>
                     </div>
                     <div class="content author_info">
                         <p>Dabby Lord</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.</p>
                         <br>
+                        <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eo</p>
+                        <br>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur a voluptas illum repellat adipisci incidunt.</p>
                     </div>
                     <div class="content contents">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, atque?</p>
                         <br>
+                        <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eo</p>
+                        <br>
                         <br>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quos eos veritatis neque tenetur tempora voluptas illum repellat adipisci incidunt.m dolor sit amet consectetur adipisicing elit. Repudiandae quos eom dolor sit amet consectetur adipisicing elit. Repudiandae quos eos illum repellat adipisci incidunt.s illum repellat adipisci incidunt.s illum repellat adipisci incidunt.</p>
                     </div>
@@ -202,91 +227,94 @@
     </section>
     <section class="full review_and_recom">
         <div class="container">
-            <div class="review">
-                <div class="comment">
-                    <p class="title">Discussions</p>
-                    <div class="comments">
-                        <div class="item">
-                            <div class="profile">
-                                <img src="img/comment/comment_people_profile.png" alt="">
-                                <div class="id">
-                                    <p>Taking the Hobbits</p>
+            <div class="row review_recom">
+                <div class="col_12 col_md_10 review">
+                    <div class="comment">
+                        <p class="title">Discussions</p>
+                        <div class="comments">
+                            <div class="item">
+                                <div class="profile">
+                                    <a href="link_personal_study" class="profile pic"><img src="pics/comment/profile_square_light.jpg" alt="">
+                                    </a>
+                                    <div class="id">
+                                        <p>Sparkle</p>
+                                    </div>
                                 </div>
+                                <div class="txt"><p>dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
                             </div>
-                            <div class="txt"><p>111Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
-                        </div>
-                        <div class="item">
-                            <div class="profile">
-                                <img src="img/comment/comment_people_profile.png" alt="">
-                                <div class="id">
-                                    <p>Taking the Hobbits</p>
+                            <div class="item">
+                                <div class="profile">
+                                    <a href="link_personal_study" class="profile pic"><img src="pics/comment/profile_square_suit.jpg" alt=""></a>
+                                    <div class="id">
+                                        <p>Markx</p>
+                                    </div>
                                 </div>
+                                <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, doldolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugia</p></div>
                             </div>
-                            <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, doldolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugia</p></div>
-                        </div>
-                        <div class="item">
-                            <div class="profile">
-                                <img src="img/comment/comment_people_profile.png" alt="">
-                                <div class="id">
-                                    <p>Taking the Hobbits</p>
+                            <div class="item">
+                                <div class="profile">
+                                    <a href="link_personal_study" class="profile pic"><img src="pics/comment/profile_square_lady.jpg" alt=""></a>
+                                    <div class="id">
+                                        <p>Ashely</p>
+                                    </div>
                                 </div>
+                                <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiam placeat, nam hic laborum?</p></div>
                             </div>
-                            <div class="txt"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiat quidem dicta quibusdadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiadolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiam placeat, nam hic laborum?</p></div>
-                        </div>
-                        <div class="item">
-                            <div class="profile">
-                                <img src="img/comment/comment_people_profile.png" alt="">
-                                <div class="id">
-                                    <p>Taking the Hobbits</p>
+                            <div class="item">
+                                <div class="profile">
+                                    <a href="link_personal_study" class="profile pic"><img src="pics/comment/profile_square_park.jpg" alt=""></a>
+                                    <div class="id">
+                                        <p>Sandwitch</p>
+                                    </div>
                                 </div>
+                                <div class="txt"><p>Lorem ipsum dolor sit, amet consecteturdolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
                             </div>
-                            <div class="txt"><p>Lorem ipsum dolor sit, amet consecteturdolor sit, amet consectetur adipisicing elit. Deserunt, dolorum officiis? Nostrum fugiaorum officiis? Nostrum fugiat quidem dicta quibusdam placeat, nam hic laborum?</p></div>
-                        </div>
-                        <div class="item">
-                            <div class="profile">
-                                <img src="img/comment/comment_people_profile.png" alt="">
-                                <div class="id">
-                                    <p>Taking the Hobbits</p>
+                            <div class="item">
+                                <div class="profile">
+                                    <a href="link_personal_study" class="profile pic"><img src="pics/comment/profile_baby.jpg" alt=""></a>
+                                    <div class="id">
+                                        <p>BB</p>
+                                    </div>
                                 </div>
+                                <div class="txt">Lorem ipsum dolor sit, amet consectetur aduibusdam placeat, nam hic laborum?laceat, nam hic laborum?laceat, nam hic laborum?</div>
                             </div>
-                            <div class="txt">Lorem ipsum dolor sit, amet consectetur aduibusdam placeat, nam hic laborum?laceat, nam hic laborum?laceat, nam hic laborum?</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="recom">
-                <p class="caption">Others also bought...</p>
-                <div class="item">
-                    <div class="recom_product_pic">
-                        <div class="pic">
-                            <img src="img/product/book/book_wise_choice.jpg" alt="">
+                <div class="col_12 col_md_2 recom">
+                    <p class="caption">Others also bought...</p>
+                    <div class="item">
+                        <div class="recom_product_pic">
+                            <a href="link_product" class="link product">
+                                <img src="pics/product/book/book_wise_choice.jpg" alt="">
+                            </a>
+                            <div class="title">
+                                <p>Wise Choices</p>
+                            </div>
+                            <p> <span>$11.5</span></p>
                         </div>
-                        <div class="title">
-                            <p>Wise Choices</p>
-                        </div>
-                        <p> <span>$11.5</span></p>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="recom_product_pic">
-                        <div class="pic">
-                            <img src="img/product/book/book_yellow_towe.jpg" alt="">
+                    <div class="item">
+                        <div class="recom_product_pic">
+                            <a href="link_product" class="link product">
+                                <img src="pics/product/book/book_yellow_tower.jpg" alt="">
+                            </a>
+                            <div class="title">
+                                <p>Life To The Top</p>
+                            </div>
+                            <p> <span>$11.5</span></p>
                         </div>
-                        <div class="title">
-                            <p>Life To The Top</p>
-                        </div>
-                        <p> <span>$11.5</span></p>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="recom_product_pic">
-                        <div class="pic">
-                            <img src="img/product/book/book_manage_energy.jpg" alt="">
+                    <div class="item">
+                        <div class="recom_product_pic">
+                            <a href="link_product" class="link product">
+                                <img src="pics/product/book/book_manage_energy.jpg" alt="">
+                            </a>
+                            <div class="title">
+                                <p>How To Manage Your Energy</p>
+                            </div>
+                            <p> <span>$11.5</span></p>
                         </div>
-                        <div class="title">
-                            <p>How To Manage Your Energy</p>
-                        </div>
-                        <p> <span>$11.5</span></p>
                     </div>
                 </div>
             </div>

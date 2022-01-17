@@ -10,6 +10,7 @@
     --tagcolor: #F0A07C;
     --npurewhite: #FBF8F6;
     --fontcolor: #2e323b;
+    --palegreen: #d8e4ce;
 }
 /* 通用顏色 end */
 
@@ -154,6 +155,23 @@ input[type="radio"]{
 
 /* input 設定 end */
 
+/* scroll bar 設定 */
+
+/* 捲軸底色 */
+.scroll_style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--subcolorgreen);
+}
+/* 捲軸寬度 */
+.scroll_style::-webkit-scrollbar {
+  width: 3px;
+  background-color: black;
+}
+/* 捲軸本體顏色 */
+.scroll_style::-webkit-scrollbar-thumb {
+  background-color: var(--subcolor);
+}
+
 /* slide button img 設定 */
 .img.slide_btn img{
     width: 40px
@@ -175,7 +193,7 @@ input[type="radio"]{
     background-size: contain;
     background-repeat: no-repeat;
     opacity: .8;
-    top: 20px;
+    top: 35px;
     left: -20px;
     width: 100%;
     height: 30px;
@@ -244,6 +262,45 @@ input[type="radio"]{
     background-color: var(--maincolor);
     box-shadow: none;
     transition: .5s;
+}
+/* profile pic */
+.profile{
+    padding: 15px;
+}
+.profile.pic{
+    display:inline-block;
+    position:relative;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.profile.pic img{
+    width:auto;
+    height:100px;
+    margin-left: -50%;
+    margin-top: -22%;
+    transition: .5s;
+}
+.profile.pic:hover img{
+    transform: scale(120%);
+    transition: .5s;
+}
+
+/* loading */
+.loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--subcolordark);
+    z-index: 100;
+}
+.loading img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
 }
 /* 其他通用 end*/
 

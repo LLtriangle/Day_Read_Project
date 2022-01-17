@@ -1,3 +1,9 @@
+// //loading
+// $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+//     $(".loading img").delay(1000).fadeOut(3000); //delay --> 延遲幾秒才fadeOut
+//     $(".loading").delay(2000).fadeOut(3000);
+// })
+
 //common start
 // search 設定
 // search txt 文字清空
@@ -34,9 +40,6 @@ $('.aside_link').click(function(){
     $('.aside.filter').toggleClass('on');
 });
 
-
-
-
 // Books 產品 more 顯示(複製)
 let i = 1;
 $('#booksBtnCloseMoreCate1').click(function(){
@@ -67,3 +70,6 @@ $('#booksBtnCloseMoreCate3').click(function(){
 });
 //Books end
 
+$('.price_fisrt_btn').click(function(){
+    $('.second_btn').addClass('on');
+});

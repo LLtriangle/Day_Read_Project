@@ -1,0 +1,6 @@
+/* header */
+.menu .columns a::after{
+    content:'';
+    border-bottom: 2px solid var(--subcolordark);
+    width: 100%;
+}

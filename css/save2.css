@@ -378,3 +378,20 @@
 }
 /* header 桌機 end */
 /* header section end*/
+
+
+
+
+/* product html */
+
+
+
+
+<label for="priceEbook" class="price_fisrt_btn ebook" >Ebook $11.5</label>
+<input type="button" id="priceEbook">
+
+<label for="priceAudioBook" class="price_fisrt_btn audiobook" >Audio Book $13.5</label>
+<input type="button" id="priceAudioBook">
+
+<label for="priceSubscribe" class="price_fisrt_btn susbscribe" >Subscribe $5 </label>
+<input type="button" id="priceSubscribe">
