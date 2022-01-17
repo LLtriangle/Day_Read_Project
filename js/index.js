@@ -41,25 +41,11 @@ $(document).ready(function(){
         $('.rolling_pics .right a:last-child').css('height',`0px`).prependTo('.rolling_pics .right');
     }, 3000)
 
-    // setInterval(function(){
-    //     // $('.rolling_pics .middle a:first-child').css('height',`0px`);
-    //     // $('.rolling_pics .middle a:last-child').css('height',`290px`);
-        
-    //     // $('.rolling_pics .middle a:first-child').appendTo('.rolling_pics .middle');setTimeout(function(){ 
-            
-    //     $('.rolling_pics .left a:first-child').css('height',`290px`);
-    //     $('.rolling_pics .left a:last-child').css('height',`0px`).prependTo('.rolling_pics .left');
-    //     $('.rolling_pics .right a:first-child').css('height',`290px`);
-    //     $('.rolling_pics .right a:last-child').css('height',`0px`).prependTo('.rolling_pics .right');
-    // },5000);
 });
 
-// $('.rolling_pics a').mouseover(function(e){
-
-// })
 
 
-
+// most recom
 
 // Reference to DOM Elements
 window.addEventListener("load", function(){console.log("next")});

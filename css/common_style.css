@@ -424,7 +424,7 @@ input[type="radio"]{
     position: absolute;
     width: 12px;
     left: 90%;
-    bottom: 24%;
+    bottom: 30%;
 }
 /* search bar 出現 */
 .header .search_bar.on{

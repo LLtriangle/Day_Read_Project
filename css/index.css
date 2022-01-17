@@ -195,7 +195,7 @@
 /* most_read 桌機 end */
 /* most_read section end */
 
-/* most_read section */
+/* most_read section start */
 .full.most_read, .most_recommended, .special_columns{
     flex-direction: column;
     align-items: center;
@@ -263,30 +263,24 @@
 .selected_cover:hover{
     opacity: 1;
 }
+/* most_read section end */
 
-
-/* most_recom section start */
-/* most_recom 手機 start */
-@media screen and (max-width: 767px) {
-    .most_recom_title{
-        line-height: 2rem;
-    }
-    .most_recom_title::after{
-        top: 75px;
-    }
-}
-/* most_recom 手機 end */
-/* most_recom 桌機 start */
-/* most_recom 桌機 end */
-/* most_recom section end */
-
-/* most recommended section */
+/* most recom section */
 /* full recom */
+.coupnum{
+    margin: auto;
+    font-size: 40px;
+    color: var(--maincolor);
+}
+.coupnum.pic{
+    width: 200px;
+    margin: auto;
+}
 .col_12.col_md_12.most_recom{
     display: block;
+    padding: 40px 10px;
 }
 .recom{
-    background-color: rosybrown;
     margin: auto;
 }
 /* flip comment book */
@@ -294,17 +288,19 @@
 .full.most_recom{
     background-color: var(--subcolor);
 }
+.col_12.col_md_12.title.most_recom::after{
+    top: 72px;
+}
 .flip_comment{
     width: 100%;
     display: flex;
     justify-content: center;
     margin: auto;
-    background-color: powderblue;
+    background-color: var(--subbgcolor);
 }
 /* flip comment book div*/
 .flip_comment_book{
     display: flex;
-    border: 1px solid ;
     padding: 0 100px;
     margin: auto;
     width: 350px;
@@ -315,7 +311,6 @@
 }
 /* front & back of paper */
 .paper{
-    border: 1px solid red;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -331,6 +326,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     top: 0;
     left: 0;
     transform-origin: left;
@@ -339,7 +335,7 @@
 .front{
     z-index: 1;
     backface-visibility: hidden;
-    border-left: 3px solid powderblue;
+    border-left: 3px solid var(--subbgcolor);
 }
 .back{
     z-index: 0;
@@ -359,7 +355,7 @@
     flex-direction: column;
 }
 .fornt_conetent h2{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 .back_content{
@@ -378,11 +374,7 @@
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    overflow: hidden;
     margin-left: 10px;
-}
-.user_profile.txt p, span{
-    font-size: 1vw;
 }
 .user_name span{
     color: var(--maincolor);
@@ -393,23 +385,16 @@
 }
 .fornt_conetent .txt{
     padding: 10px 10px;
-    font-size: 1vw;
-    text-indent: 1rem;
 }
 .back_content h3{
     padding-top: 40px;
+    line-height: 2rem;
 }
 .front.cover{
     background-image: url(/pics/background/bg_cover.jpg);
     background-size: cover;
     background-position: center center;
 }
-/* h2, img{
-    box-sizing: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 /* prev & next btn */
 .flip_comment.prev_btn_label, .flip_comment.next_btn_label{
     box-sizing: inline-block;
@@ -418,14 +403,6 @@
     margin: 10px;
     transition: transform 1s;
 }
-.flip_comment.prev_btn_label:focus, .flip_comment.next_btn_label:focus{
-    outline: none;
-}
-.flip_comment.prev_btn_label:hover, .flip_comment.next_btn_label:hover{
-    font-size: 100px;
-    color: gray;
-}
-
 /* paper stack order */
 #p1{
     z-index: 4;
@@ -439,6 +416,99 @@
 #p4{
     z-index: 1;
 }
+/* most_recom 手機 start */
+
+@media screen and (max-width: 767px) {
+    .coupnum{
+        margin: auto;
+        font-size: 20px;
+        color: var(--maincolor);
+    }
+    .coupnum.pic{
+        width: 100px;
+        margin: auto;
+    }
+    .recom{
+        margin: auto;
+    }
+    .most_recom_title{
+        line-height: 2.5rem;
+    }
+    .col_12.col_md_12.most_recom{
+        overflow: hidden;
+    }
+    .col_12.col_md_12.title.most_recom::after{
+        top: 120px;
+    }
+    .flip_comment_book{
+        display: flex;
+        padding: 0 100px;
+        margin: auto;
+        height: 300px;
+        position: relative;
+        transition: transform 1s;
+    }
+    /* slide button img 設定 */
+    .img.slide_btn img{
+        width: 30px;
+        opacity: .6;
+    }
+    .slide_btn.prev, .slide_btn.next{
+        display: block;
+        margin: auto;
+        z-index: 100;
+        width: 20px;
+    }
+
+    /* paper content */
+    .fornt_content, .back_content{
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .fornt_conetent h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .back_content h3{
+        padding-top: 0;
+        margin: auto;
+        line-height: 2rem;
+    }
+    .back_content{
+        transform: rotateY(180deg);
+    }
+    .link.product{
+        margin: auto;
+        width: 100px;
+    }
+    /* profile*/
+    
+    .user_profile.txt{
+        margin: 0;
+    }
+    .profile.pic{
+        display:inline-block;
+        position:relative;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .comment{
+        overflow: auto;
+        height: 140px;
+    }
+    .profile.pic img{
+        margin-top: -100%;
+        margin-left: -220%;
+    }
+}
+/* most_recom 手機 end */
 
 
 /* transition start */
@@ -458,71 +528,3 @@
     background-attachment: fixed;
 }
 /* transition end */
-
-@media screen and (max-width: 767px) {
-    .flip_comment_book{
-        display: flex;
-        border: 1px solid ;
-        padding: 0 100px;
-        margin: auto;
-        height: 300px;
-        position: relative;
-        transition: transform 1s;
-    }
-    .link.product{
-        width: 100px;
-    }
-    /* slide button img 設定 */
-    .img.slide_btn img{
-        width: 30px;
-        opacity: .6;
-    }
-    .slide_btn.prev, .slide_btn.next{
-        display: block;
-        margin: auto;
-        z-index: 100;
-        width: 20px;
-    }
-
-    /* paper content */
-    .fornt_content, .back_content{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-    }
-    .fornt_conetent h2{
-        font-size: 20px;
-        text-align: center;
-    }
-    .back_content{
-        transform: rotateY(180deg);
-    }
-    .link.product{
-        margin: auto;
-    }
-    /* profile*/
-    
-    .user_profile.txt{
-        margin: 0;
-    }
-    .profile.pic{
-        display:inline-block;
-        position:relative;
-        border-radius: 100%;
-        width: 60px;
-        height: 60px;
-        overflow: hidden;
-        margin-left: 10px;
-    }
-    .comment{
-        overflow: hidden;
-        height: 140px;
-    }
-    .profile.pic img{
-        margin-top: -100%;
-        margin-left: -220%;
-    }
-}
