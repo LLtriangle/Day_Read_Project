@@ -124,6 +124,9 @@
         left: 60%;
         top: 5%;
     }
+    .arti.date.left{
+        color: var(--maincolor);
+    }
     /* columns txt*/
     .title.column{
         line-height: 2rem;

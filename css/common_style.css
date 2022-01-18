@@ -302,6 +302,33 @@ input[type="radio"]{
     width: 20vw;
     transform: translate(-50%, -50%);
 }
+
+/* owl */
+
+.owl-item{
+    padding: 0 10px;
+}
+
+/* more */
+
+.more{
+    padding-top: 40px;
+    justify-content: right;
+    font-weight: 600;
+    padding-right: 20px;
+}
+.more a{
+    color: var(--subcolordark);
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+}
+.col_12.col_md_12.more.most_recom{
+    display: flex;
+}
+.more:hover a{
+    border-bottom: 3px solid var(--subcolordark);
+    transition: .5s;
+}
 /* 其他通用 end*/
 
 /* header section start */
@@ -644,14 +671,111 @@ input[type="radio"]{
 /* footer 手機 end */
 /* footer 桌機 start */
 /* footer 桌機 end */
-
-
-
-
-
-
-
-
-
-
 /* footer section end */
+
+/* columns */
+/* columns deco line */
+.column_arti{
+    position: relative;
+}
+.column_arti:hover::after, .column_arti:hover::before {
+    width: 48px;
+    height: 48px;
+    transition: .5s cubic-bezier(0.63, .57, 0.26, 0.99);
+    opacity: 1;
+}
+.column_arti::after{
+    content: '';
+    position: relative;
+    width: 0vw;
+    height: 0vh;
+    bottom: -3vh;
+    right: -1vw;
+    border-bottom: 1px solid var(--fontcolor);
+    border-right: 1px solid var(--fontcolor);
+    position: absolute;
+    transition: .5s cubic-bezier(0.63, 0.37, 0.26, 0.99);
+    opacity: 0;
+}
+.column_arti::before{
+    content: '';
+    position: relative;
+    width: 0vw;
+    height: 0vh;
+    top: -3vh;
+    left: -2vw;
+    border-top: 1px solid var(--fontcolor);
+    border-left: 1px solid var(--fontcolor);
+    position: absolute;
+    transition: .5s cubic-bezier(0.63, 0.37, 0.26, 0.99);
+    opacity: 0;
+}
+/* columns pic */
+.arti_pic{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.arti_pic img{
+    width: 100%;
+    transition: .5s cubic-bezier(0.63, 0.37, 0.26, 0.99);
+}
+/* columns date */
+.arti.date.right, .arti.date.left{
+    color: var(--subcolordark);
+    position: absolute;
+    font-size: 30px;
+    font-style: italic;
+    z-index: 1;
+    left: 75%;
+    top: -3%;
+}
+.arti.date.left{
+    color: var(--maincolor);
+}
+.column_arti:hover img{
+    transform: scale(1.07);
+    transition: .5s cubic-bezier(0.63, 0.37, 0.26, 0.99);
+}
+.title.column{
+    font-size: 24px;
+    padding: 20px 0;
+}
+/* column 手機 */
+@media screen and (max-width: 767px) {
+    /* columns */
+    .row.columns{
+        display: block;
+    }
+    .column_arti{
+        padding-top: 40px;
+        margin-top: 70px;
+    }
+    /* columns  deco line*/
+    .column_arti::after{
+        bottom: -5vh;
+        right: 2vw;
+    }
+    .column_arti::before{
+        top: -5vh;
+        left: 1vw;
+    }
+    .arti.date.right, .arti.date.left{
+        color: var(--subcolordark);
+        position: absolute;
+        font-size: 30px;
+        font-style: italic;
+        z-index: 100;
+        left: 60%;
+        top: 5%;
+    }
+    .arti.date.left{
+        color: var(--maincolor);
+    }
+    /* columns txt*/
+    .title.column{
+        line-height: 2rem;
+    }
+}
