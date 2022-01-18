@@ -6,6 +6,9 @@
     justify-content: space-around;
     padding: 0;
 }
+.row.header{
+    padding: 0;
+}
 /* profile */
 .profile{
     display: block;
