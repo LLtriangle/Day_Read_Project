@@ -47,27 +47,6 @@ p, a, ul, ol, li,span{
 p.tiny_font{
     font-size: 14px;
 }
-/* @media screen and (max-width: 768px) {
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        font-size: 30px;
-    }
-    h3{
-        font-size: 28px;
-    }
-    h4{
-        font-size: 20px;
-    }
-    p, a, ul, ol, li,span{
-        font-size: 18px;
-        padding: 0;
-    }
-    p.tiny_font{
-        font-size: 14px;
-    }
-} */
 /* 通用字級 end */
 
 /* 其他通用 stsrt */
@@ -329,6 +308,20 @@ input[type="radio"]{
     border-bottom: 3px solid var(--subcolordark);
     transition: .5s;
 }
+
+/* 滾滾滾出現跟消失 */
+.scro{
+    position: relative;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.scro.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 /* 其他通用 end*/
 
 /* header section start */

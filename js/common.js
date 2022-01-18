@@ -19,6 +19,24 @@ $('#burgerBtns').click(function(){
     $('.menu').toggleClass('on');
     $('#burgerBtns').toggleClass('on');
 });
+
+window.addEventListener('scroll',reveal);
+
+function reveal(){
+    var reveals = document.querySelectorAll('.scro');
+    for(var i = 0; i< reveals.length; i++){
+      var window_height = window.innerHeight;
+      var reveal_top = reveals[i].getBoundingClientRect().top;
+      var reveal_point = 150;
+
+      if(reveal_top < window_height - reveal_point){
+          reveals[i].classList.add('active');
+      }else{
+        reveals[i].classList.remove('active');
+      }
+    }  
+}
+
 //common end
 
 //books start
