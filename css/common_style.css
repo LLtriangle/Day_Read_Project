@@ -310,16 +310,19 @@ input[type="radio"]{
 }
 
 /* 滾滾滾出現跟消失 */
-.scro{
-    position: relative;
-    transform: translateX(100px);
-    opacity: 0;
-    transition: all 1s ease;
-}
 
-.scro.active{
-    transform: translateY(0px);
-    opacity: 1;
+@media screen and (min-width: 768px) {
+    .scro{
+        position: relative;
+        transform: translateX(100px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .scro.active{
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 /* 其他通用 end*/
