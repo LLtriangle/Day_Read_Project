@@ -198,7 +198,8 @@
 }
 .recom .caption{
     padding-top: 18px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .recom p{
     padding: 10px;
@@ -227,8 +228,15 @@
         box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
         text-align: center;
     }
+    .recom_product_pic{
+        text-align: center;
+    }
     .col_12.col_md_2.btns{
         padding: 40px 20px;
+    }
+    .col_12.col_md_2.recom{
+        display: block;
+        margin: auto;
     }
 }
 

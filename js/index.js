@@ -1,26 +1,4 @@
-
-
-// $(document).ready(function(){
-//     let finish = $('.middle').css(top)
-//     if(finish == 0){
-//         $('.middle a').clone().insertAfter('.middle');
-//         console.log('done');
-//     }else if (finish == 1200){
-//         $('.middle a').remove();
-//     }
-
-// });
-
-
 $(document).ready(function(){
-
-    // $('.rolling_pics .middle a:last-child').css('height',`0px`);
-    // $('.rolling_pics .middle a:first-child').css('height',`0px`);
-    // $('.rolling_pics .middle a:last-child').css('height',`290px`);
-    // $('.rolling_pics .middle a:first-child').appendTo('.rolling_pics .middle');
-    // setTimeout(function(){ 
-        
-    // },4990);
     $('.rolling_pics .middle a:first-child').css('height',`290px`);
     $('.rolling_pics .middle a:last-child').css('height',`0px`).prependTo('.rolling_pics .middle');
     $('.rolling_pics .left a:first-child').css('height',`290px`);

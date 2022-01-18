@@ -189,7 +189,7 @@ input[type="radio"]{
 .col_12.col_md_12.title::after{
     content: '';
     position: absolute;
-    background-image: url("/pics/background/bg_title_underline.png");
+    background-image: url('../pics/background/bg_title_underline.png');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: .8;

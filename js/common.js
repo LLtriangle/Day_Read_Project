@@ -1,9 +1,3 @@
-// //loading
-// $(window).load(function() { // 確認整個頁面讀取完畢再將這三個div隱藏起來
-//     $(".loading img").delay(1000).fadeOut(3000); //delay --> 延遲幾秒才fadeOut
-//     $(".loading").delay(2000).fadeOut(3000);
-// })
-
 //common start
 // search 設定
 // search txt 文字清空
@@ -71,6 +65,11 @@ $('#booksBtnCloseMoreCate3').click(function(){
 //books end
 
 // product
+$('.price_fisrt_btn').click(function(){
+  $('.second_btn').addClass('on');
+});
+
+//personal study
 $('#BtnNavMore').click(function(){
     $('.profile .nav').toggleClass('on');
 });
@@ -120,40 +119,3 @@ $(document).ready(function(){
       })
 
   });
-
-
-//   $(".owl-carousel").owlCarousel({
-//     loop: true, // 循環播放
-//     margin: 10, // 外距 10px
-//     nav: true, // 顯示點點
-//     responsive: {
-//       0: {
-//         items: 1 // 螢幕大小為 0~600 顯示 1 個項目
-//       },
-//       600: {
-//         items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
-//       },
-//       1000: {
-//         items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
-//       }
-//     }
-//   });
-  
-
-// 放入Java Script程式碼
-// $('.owl-carousel').owlCarousel({
-// loop:true,
-// margin:10,
-// nav:true,   /* 控制列 */
-// autoWidth:true,   /* 可自行設定輪播寬度 */
-// items:3,  /* 一頁出現的張數 */
-// autoplay:true,  /* 自動輪播 */
-// autoplayTimeout:1500,  /* 輪播速度 */
-// autoplayHoverPause:true
-// });
-// $('.play').on('click',function(){
-// owl.trigger('play.owl.autoplay',[1000])
-// })
-// $('.stop').on('click',function(){
-// owl.trigger('stop.owl.autoplay')
-// })

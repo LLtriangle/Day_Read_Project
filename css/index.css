@@ -356,7 +356,7 @@
     line-height: 2rem;
 }
 .front.cover{
-    background-image: url(/pics/background/bg_cover.jpg);
+    background-image: url('../pics/background/bg_cover.jpg');
     background-size: cover;
     background-position: center center;
 }
